@@ -1,9 +1,31 @@
+body {
+  background-color: #1A1A1D;
+  padding: 20px;
+}
+
 h1 {
+  color: #6F2232;
   font-family: 'Russo One', sans-serif;
   text-align: center;
 }
 
 h2 {
   font-family: 'Archivo Narrow';
+  color: #950740;
 }
 
+h3 {
+  color: #C3073F;
+}
+
+p, ul, ol, dl, pre {
+color: #E2E2DF;
+}
+
+dt {
+  color: #C3073F;
+}
+
+#greeting {
+  text-align: center;
+}
