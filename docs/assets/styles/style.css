@@ -29,3 +29,14 @@ dt {
 #greeting {
   text-align: center;
 }
+
+table{
+  text-align: center;
+  color: #E2E2DF;
+  border: 2px solid yellowgreen;
+}
+
+tr, td{
+  border: 2px dashed yellowgreen;
+  padding: 15px;
+}
