@@ -1,0 +1,65 @@
+body {
+  background-color: darkorange;
+}
+
+ul {
+  background-color: rgba(100,100,100,0.5);
+}
+/* *{ el usar asterisco significa global, osea se aplica a todo
+    background-color: deepblue;
+} */
+
+p em {
+  background-color: magenta;
+}
+
+#segundo {
+  background-color: blue;
+}
+
+nav {
+  color: blue; background-color: aliceblue;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+/*Pseudo clases*/
+a:hover{color: chartreuse;}
+a:visited{color: coral;}
+a:active{background-color: crimson;}
+a:focus{background-color: magenta;}
+a::after{content: "😊"}
+
+.container2{
+  background-color: deepskyblue;
+  margin: 50px;
+  padding: 20px;
+  border: 5px double white;
+  border-radius: 10px;
+}
+
+.container3{
+  background-color: blueviolet;
+  margin: 25px 5px 0px 0px; /* arriba - derecha - abajo - izquierda*/
+  padding: 30px 5px 10px; /*arriba - derecha izquiera - abajo */
+  border: 5px 10px; /*arriba abajo - derecha he izquierda*/
+}
+
+.container4{
+  background-color: dimgray;
+  margin: 25px 5px 0px 0px; /* arriba - derecha - abajo - izquierda*/
+  padding: 30px 5px 10px; /*arriba - derecha izquiera - abajo */
+  border: 5px 10px; /*arriba abajo - derecha he izquierda*/
+}
+
+
+.container5{
+  background-color: yellowgreen;
+  margin: 25px 5px 0px 0px; /* arriba - derecha - abajo - izquierda*/
+  padding: 30px 5px 10px; /*arriba - derecha izquiera - abajo */
+  border: 5px 10px; /*arriba abajo - derecha he izquierda*/
+}
+
+/*Pseudo elementos */
