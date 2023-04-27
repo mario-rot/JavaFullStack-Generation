@@ -128,6 +128,55 @@ const getEstacion = () => {
 
 }
 
+// --------------- Switch -----------------------
+/*
+ La instrucción Switch evalua una expresión y se compara
+ con el valor de cada instancia en 'case' y se ejecuta las
+ sentencias asociadas a ese 'case' hasta que se encuentre la sentencia 'break'.
+Sintaxis:
+    switch (expresión){
+      case valor1:
+        sentencias;
+        break;
+      case valor 2:
+        sentencias;
+        break;
+      case valor n:
+        sentencias;
+        break;
+      default:
+        sentencias;
+        break;
+    }
+*/
+
+
+const setVelocidadVentilador = (velocidad) => {
+  let msj;
+  switch (velocidad) {
+    case 0:
+      msj = "Apagado";
+      break;
+    case 1:
+      msj = "Velocidad baja";
+      break;
+    case 2:
+      msj = "Velocidad media";
+      break;
+    case 3:
+      msj = "Velocidad alta";
+      break;
+    case 4:
+    case 5:
+      msj = "Velocidad super alta";
+      break;
+    default:
+      msj = "el nivel no existe";
+      break;
+  }
+  return msj;
+};
+
 
 // ---------- Practica ------------
 // Refactorizar el ejercicio anterior y utilizar un switch
