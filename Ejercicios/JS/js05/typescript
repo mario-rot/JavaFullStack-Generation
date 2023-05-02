@@ -1,473 +1,0 @@
-Script started on 2023-05-02 11:32:08-06:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="97" LINES="45"]
-[0m[49m[39m[27m[24m[K
-[1A7[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mE[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[49m[34m[0m[34m[49m[39m [0m[49m[39m[?2004h[?25l8[0m[49m[39m[27m[24m[J]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mE[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[11C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[31D[?1h=[?25h[?2004hn[1m[31mn[0m[39m[1m[31mn[0m[39m[90mode script.js[39m[K[13D[1m[31mn[1m[31mo[0m[39m[1m[31mn[1m[31mo[1m[31md[0m[39m[1m[31md[1m[31me[0m[39m[0m[32mn[0m[32mo[0m[32md[0m[32me[39m[K[7C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[27D[?1l>[?2004l
-]2;node]1;nodeWelcome to Node.js v18.16.0.
-Type ".help" for more information.
-[1G[0J> [3Gnode[1G[0J> nod[6G[1G[0J> no[5G[1G[0J> n[4G[1G[0J> [3Gl[90met[39m[4G[0Ke[90mt[39m[5G[0Kt x = 3;
-[90mundefined[39m
-[1G[0J> [3Gl[90met[39m[4G[0Ke[90mt[39m[5G[0Kt y[90mield[39m[8G[0K = ++x;
-[90mundefined[39m
-[1G[0J> [3Gcon[1G[0J> co[5G[1G[0J> c[4G[1G[0J> [3Gy
-[90m4[39m[4G[1A[1B[2K[1A
-[1G[0J> [3G
-(To exit, press Ctrl+C again or Ctrl+D or type .exit)
-[1G[0J> [3G
-[1m[7m%[27m[1m[0m                                                                                                 ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mE[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[?1h=[?2004hl[32ml[39m[32ml[39m[90mvim[39m[32ml[32mr[39m[39m [39m [1m[31ml[1m[31mr[0m[39m[1m[31ml[0m[39m[0m[39m [0m[32ml[39m[32ml[39m[90mvim[39m[39m [39m [39m [39m c[1m[31mc[0m[39m[1m[31mc[0m[39m[90md  js05[39m[1m[31mc[1m[31ml[0m[39m[39m [39m [39m [39m [39m [39m [90mear[39m[1m[31mc[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[1m[31ma[1m[31mr[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[0m[32mr[39m[?1l>[?2004l
-]2;clear]1;clear[H[2J[3J[1m[7m%[27m[1m[0m                                                                                                 ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mE[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[11C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[31D[?1h=[?2004hclear[32mc[32ml[32me[32ma[32mr[39m[32mn[32mo[32md[32me[39m[39m [32ms[32mc[32mr[32mi[39mpt[32mi[32mp[32mt[39m[32mn[32mo[32md[32me[32m [32ms[39mcript.js[K[11D[32me[39m[39m [39m[4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[1m[7m%[27m[1m[0m                                                                                                 ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mE[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[11C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[31D[?1h=[?2004hnode script.js[K[14D[32mn[32mo[32md[32me[39m [4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-[1m[7m%[27m[1m[0m                                                                                                 ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mE[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[11C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[31D[?1h=[?2004h[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/Github/Personal/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[97C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[117Dnode script.js[14D[32mn[32mo[32md[32me[39m [4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-Modelo Chevrolet
-/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05/script.js:131
-console.log("Modelo " + model + " color " + colorAuto)
-                                            ^
-
-ReferenceError: colorAuto is not defined
-    at Object.<anonymous> [90m(/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05/[39mscript.js:131:45[90m)[39m
-[90m    at Module._compile (node:internal/modules/cjs/loader:1254:14)[39m
-[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)[39m
-[90m    at Module.load (node:internal/modules/cjs/loader:1117:32)[39m
-[90m    at Module._load (node:internal/modules/cjs/loader:958:12)[39m
-[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
-[90m    at node:internal/main/run_main_module:23:47[39m
-
-Node.js v18.16.0
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[119C[0m[49m[31m[0m[31m[41m[33m 1[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[34m[0m[34m[41m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[141D[?1h=[?2004hnode script.js[14D[32mn[32mo[32md[32me[39m [4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-Modelo Chevrolet
-Modelo Chevrolet color Pistache
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[109C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[129D[?1h=[?2004hnode script.js[14D[32mn[32mo[32md[32me[39m [4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-Modelo Chevrolet
-Modelo undefined color Pistache
-Modelo undefined color red
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[109C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[129D[?1h=[?2004hnode script.js[14D[32mn[32mo[32md[32me[39m [4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-Modelo Chevrolet
-Modelo Chevrolet color red
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[109C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[129D[?1h=[?2004hnode script.js[14D[32mn[32mo[32md[32me[39m [4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-Modelo Chevrolet
-Modelo Chevrolet color red
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[109C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[129D[?1h=[?2004hnode script.js[14D[32mn[32mo[32md[32me[39m [4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-Modelo Chevrolet
-Modelo Chevrolet color red
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[109C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[129D[?1h=[?2004hnode script.js[14D[32mn[32mo[32md[32me[39m [4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-[33mtrue[39m
-Estás Autorizado
-Estas autorizado
-Estas autorizado
-Estas autorizado
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[109C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[129D[?1h=[?2004h[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mE[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[11C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[31Dn[1m[31mn[0m[39m[1m[31mn[0m[39m[90mode script.js[39m[K[13D[1m[31mn[1m[31mo[0m[39m[1m[31mn[1m[31mo[1m[31mi[0m[39m[K[8C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[28D[1m[31mn[1m[31mo[0m[39m[0m[39m [90mde script.js[39m[K[12D[1m[31mn[1m[31mo[1m[31md[0m[39m[1m[31md[1m[31me[0m[39m[0m[32mn[0m[32mo[0m[32md[0m[32me[39m[K[7C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[27D[?1l>[?2004l
-]2;node]1;nodeWelcome to Node.js v18.16.0.
-Type ".help" for more information.
-[1G[0J> [3G""
-[90m''[39m[5G[1A[1B[2K[1A[1D
-[90m''[39m[4G[1A[1B[2K[1A[1G[0J> "t"[5G
-[90m't'[39m[5G[1A[1B[2K[1A[1G[0J> "tr"[6G
-[90m'tr'[39m[6G[1A[1B[2K[1A[1G[0J> "tru"[7G
-[90m'tru'[39m[7G[1A[1B[2K[1A[1G[0J> "true"[8G
-[90m'true'[39m[8G[1A[1B[2K[1A[1C
-[90m'true'[39m[9G[1A[1B[2K[1A==tru[90me[39m[14G
-[90mfalse[39m[14G[1A[1B[2K[1A[0Ke
-[90mfalse[39m[15G[1A[1B[2K[1A[1G[0J> "true"==true[15G
-[90mfalse[39m[15G[1A[1B[2K[1A[1G[0J> "true"==true[15G
-[90mfalse[39m[15G[1A[1B[2K[1A
-[1G[0J> [3G
-(To exit, press Ctrl+C again or Ctrl+D or type .exit)
-[1G[0J> [3G
-[1m[7m%[27m[1m[0m                                                                                                 ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mE[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[?1h=[?2004hc[1m[31mc[0m[39m[1m[31mc[0m[39m[90mlear[39m[1m[31mc[1m[31ml[0m[39m[1m[31mc[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[1m[31ma[1m[31mr[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[0m[32mr[39m[?1l>[?2004l
-]2;clear]1;clear[H[2J[3J[1m[7m%[27m[1m[0m                                                                                                 ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mE[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[11C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[31D[?1h=[?2004hn[1m[31mn[0m[39m[1m[31mn[0m[39m[90mode[39m[1m[31mn[1m[31mo[0m[39m[1m[31mn[1m[31mo[1m[31md[0m[39m[1m[31md[1m[31me[0m[39m[0m[32mn[0m[32mo[0m[32md[0m[32me[39m script.js[K[9D[4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-[33mtrue[39m
-Estás Autorizado
-Estas autorizado
-Estas autorizado
-Estas autorizado
-[33mfalse[39m
-[33mtrue[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mtrue[39m
-[33mtrue[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mtrue[39m
-a: 10 , b:20 
-a: 20 , b:10 
-a: 50 , b:30 
-[ [33m60[39m, [33m99[39m ]
-a: 43 alumnos , b:50 alumnos 
-Modelo Chevrolet
-Modelo Chevrolet color red
-[1m[7m%[27m[1m[0m                                                                                                 ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mE[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mJ[0m[38;5;250m[44m[44m[38;5;254m/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[11C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[31D[?1h=[?2004h[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/Github/Personal/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[97C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[117Dnode script.js[14D[32mn[32mo[32md[32me[39m [4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-[33mtrue[39m
-Estás Autorizado
-Estas autorizado
-Estas autorizado
-Estas autorizado
-[33mfalse[39m
-[33mtrue[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mtrue[39m
-[33mtrue[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mtrue[39m
-a: 10 , b:20 
-a: 20 , b:10 
-a: 50 , b:30 
-[ [33m60[39m, [33m99[39m ]
-a: 43 alumnos , b:50 alumnos 
-Modelo Chevrolet
-Modelo Chevrolet color red
-El resultado de 9/5, cociente: NaN, residuo NaN 
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[109C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[129D[?1h=[?2004hnode script.js[14D[32mn[32mo[32md[32me[39m [4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-[33mtrue[39m
-Estás Autorizado
-Estas autorizado
-Estas autorizado
-Estas autorizado
-[33mfalse[39m
-[33mtrue[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mtrue[39m
-[33mtrue[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mtrue[39m
-a: 10 , b:20 
-a: 20 , b:10 
-a: 50 , b:30 
-[ [33m60[39m, [33m99[39m ]
-a: 43 alumnos , b:50 alumnos 
-Modelo Chevrolet
-Modelo Chevrolet color red
-El resultado de 9/5, cociente: 1.8, residuo 4 
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[109C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[129D[?1h=[?2004hnode script.js[14D[32mn[32mo[32md[32me[39m [4ms[4mc[4mr[4mi[4mp[4mt[4m.[4mj[4ms[24m[?1l>[?2004l
-]2;node script.js]1;nodeSesion js05 operadores
-[33m-3[39m
-[33m200[39m
-[33mfalse[39m
-[33m12[39m
-nuevo valor [33m12[39m
-numero [33m13[39m
-nuevoDato [33m14[39m
-numero [33m14[39m
-x: 4 y: 5
-x: 5 y: 5
-[33mtrue[39m
-Holi Crayoli
-[33mfalse[39m
-[33mNaN[39m
-El valor es false
-
-[33mtrue[39m
-Holi Crayoli
-El valor es un número que se puede procesar
-false
-No hay dato
-[33mtrue[39m
-Estás Autorizado
-Estas autorizado
-Estas autorizado
-Estas autorizado
-[33mfalse[39m
-[33mtrue[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mtrue[39m
-[33mtrue[39m
-[33mfalse[39m
-[33mfalse[39m
-[33mtrue[39m
-a: 10 , b:20 
-a: 20 , b:10 
-a: 50 , b:30 
-[ [33m60[39m, [33m99[39m ]
-a: 43 alumnos , b:50 alumnos 
-Modelo Chevrolet
-Modelo Chevrolet color red
-El resultado de 9/5, cociente: 1, residuo 4 
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05]1;..icios/JS/js05]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack/Ejercicios/JS/js05[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/[38;5;250mG[0m[38;5;250m[44m[44m[38;5;254m/[38;5;250mP[0m[38;5;250m[44m[44m[38;5;254m/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m/Ejercicios/JS/[1m[38;5;254m[44m[38;5;255mjs05[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[109C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[129D[?1h=[?2004ht[1m[31mt[0m[39m[1m[31mt[0m[39m[90mree[39m[0m[39m [39m [39m [39m g[32mg[39m[32mg[39m[90mit push origin main[39m[19D[32mg[32mi[39m[1m[31mg[1m[31mi[0m[39m[1m[31mg[1m[31mi[1m[31mt[0m[39m[0m[32mg[0m[32mi[0m[32mt[39m[32mt[32m [39m[32mt[39m[39m [39ma[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[90mdd .[39m [39m [39m [39m [39m [90mpush origin main[39m[16D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[90m push origin main[39m[17D[32mt[32mc[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[1m[31mg[1m[31mi[1m[31mt[1m[31mc[0m[39m[1m[31mc[1m[31md[0m[39m[1m[31md[1m[31m [0m[39m[1m[31md[0m[39m[0m[39m [1m[31mc[0m[39m[0m[39m [1m[31mt[0m[39m[0m[39m [0m[32mg[0m[32mi[0m[32mt[39m[90m push origin main[39m[17D[32mg[32mi[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18D[1m[31mg[1m[31mi[0m[39m[90mt push origin main[39m[18D[1m[31mg[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[0m[32mg[39m[32mg[39m[90mit push origin main[39m[19D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [20Dc[1m[31mc[0m[39m[1m[31mc[0m[39m[90mlear[39m[1m[31mc[1m[31md[0m[39m[39m [39m [39m [0m[32mc[0m[32md[39m[90m  js05[39m[32mc[32md[32m [39m[32mc[32md[39m[39m [39m.[39m [39m [39m [39m [4m.[24m[90m.[39m[4m.[39m[4m/[24m[90minit.vim[39m[8D[4m.[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [9D[90m.[39m[24m [39m [90m js05[39m[39m.[39m [39m [39m [39m [4m.[24m[90m.[39m[4m.[39m[4m.[24m[4m.[4m/[24m[90m../[39m[39m.[39m.[39m/[4m/[4m.[4m.[4m/[24m[4m/[4m.[24m[90m.[39m[4m.[39m[4m.[24m[4m.[4m/[24m[?1l>[?2004l
-]2;cd ../../../]1;cd[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack]1;..JavaFullStack]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack[0m[38;5;254m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/Github/Personal/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[116C[0m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m✔[0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[34m[0m[34m[40m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[136D[?1h=[?2004hg[32mg[39m[32mg[39m[90mit push origin main[39m[19D[32mg[32mi[39m[1m[31mg[1m[31mi[0m[39m[1m[31mg[1m[31mi[1m[31mt[0m[39m[0m[32mg[0m[32mi[0m[32mt[39m[32mt[32m [39m[32mt[39m[39m [39ma[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[90mdd .[39m [39m [39m [39m [39m [90mpush origin main[39m[16D[39mo[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D [90mpush origin main[39m[16D[39mc[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[90mommit -m 'Adding Navar to calculators'[39m[38D[39mo[39mm[39mm[39mi[39mt[39m [39m-[39mm[39m [39m'[39mA[39md[39md[39mi[39mn[39mg[39m [39mN[39ma[39mv[39ma[39mr[39m [39mt[39mo[39m [39mc[39ma[39ml[39mc[39mu[39ml[39ma[39mt[39mo[39mr[39ms[39m'[29D[33m'[33mA[33md[33md[33mi[33mn[33mg[33m [33mN[33ma[33mv[33ma[33mr[33m [33mt[33mo[33m [33mc[33ma[33ml[33mc[33mu[33ml[33ma[33mt[33mo[33mr[33ms[33m'[39mam[39m [33m'[33mA[33md[33md[33mi[33mn[33mg[33m [33mN[33ma[33mv[33ma[33mr[33m [33mt[33mo[33m [33mc[33ma[33ml[33mc[33mu[33ml[33ma[33mt[33mo[33mr[33ms[33m'[39m[31D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33m'[39m[39m [33mF[33m'[39m[33mi[33m'[39m[33mn[33m'[39m[33mi[33m'[39m[1C[33mi[39m[39m [33mi[33ms[39m[33ms[33mh[39m[33mh[33mi[39m[33mi[33mn[39m[33mn[33mg[39m[33mg[33m [39m[33m [33mj[39m[33mj[33ms[39m[33ms[33m0[39m[33m0[33m4[39m[33m4[33m [39m[33m [33ma[39m[33ma[33mn[39m[33mn[33md[39m[33md[33m [39m[33m [33mj[39m[33mj[33ms[39m[33ms[33m [39m[33ms[39m[39m [33ms[33m0[39m[33m0[33m5[39m[33m5[33m"[39m[?1l>[?2004l
-[0m[27m[24m[Jquote> [K[?1h=[?2004h[?1l>[?2004l
-[0m[27m[24m[Jquote> [K[?1h=[?2004h[?1l>[?2004l
-[0m[27m[24m[Jquote> [K[?1h=[?2004h[?1l>[?2004l
-[0m[27m[24m[Jquote> [K[?1h=[?2004h[?1l>[?2004l
-[0m[27m[24m[Jquote> [K[?1h=[?2004h[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                         ]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack\]2;mario-rot@fedorawk:~/Github/Personal/JavaFullStack/CursoJavaFullStack]1;..JavaFullStack]7;file://fedorawk/home/mario-rot/Github/Personal/JavaFullStack/CursoJavaFullStack[0m[49m[39m[K
-[0m[27m[24m[J[0m[49m[39m[0m[49m[37m░▒▓[0m[37m[47m[38;5;232m [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[44m[37m[0m[37m[44m[44m[38;5;254m  [1m[38;5;254m[44m[38;5;255m~[0m[38;5;255m[44m[44m[38;5;254m/Github/Personal/JavaFullStack/[1m[38;5;254m[44m[38;5;255mCursoJavaFullStack[0m[38;5;255m[44m[44m[38;5;254m[0m[38;5;254m[44m[44m[38;5;254m [0m[38;5;254m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m!2 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m [0m[49m[39m[K[112C[0m[49m[31m[0m[31m[41m[33m INT[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[34m[0m[34m[41m[44m[30m base[0m[30m[44m[44m[30m [0m[30m[44m[44m[30m [0m[30m[44m[44m[30m[32m[0m[32m[44m[42m[30m [0m[30m[42m[42m[30m[0m[30m[42m[42m[30m [49m[32m▓▒░[0m[32m[42m[30m[0m[30m[42m[49m[39m[136D[?1h=[?2004hg[32mg[39m[32mg[39m[90mit commit -am 'Finishing js04 and js05"[39m
-[K
-[K
-[K
-[K[4A[81C[32mg[32mi[39m[4B[K[4A[82C[1m[31mg[1m[31mi[0m[39m[1m[31mg[1m[31mi[1m[31mt[0m[39m[0m[32mg[0m[32mi[0m[32mt[39m[32mt[32m [39m[32mt[39m[39m [39ma[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m 
