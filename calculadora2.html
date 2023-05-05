@@ -17,7 +17,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
   <!-- Boostrap stylesheetfor code (but it invalidate the local one) -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
-
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="./assets/styles/main.css" />
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -104,98 +105,101 @@
       </div>
     </div>
   </nav>
-  <main class="cont-general min-flex">
-    <div class="sub-general container">
 
-      <!-- HEADER -->
-      <div class="row bg-dark min-flex text-white">
-        <div class="header text-center">
-          <h1>Calculadora Cientifica</h1>
-        </div>
-      </div>
-
-      <form name="sci-calc">
-
-        <table class="calculator" cellspacing="0" cellpadding="1">
-          <tr>
-            <td colspan="5"><input id="display" name="display" value="0" size="28" maxlength="25"></td>
-          </tr>
-          <tr>
-            <td><input type="button" class="btnTop" name="btnTop" value="C" onclick="this.form.display.value=  0 "></td>
-            <td><input type="button" class="btnTop" name="btnTop" value="<--" onclick="deleteChar(this.form.display)">
-            </td>
-            <td><input type="button" class="btnTop" name="btnTop" value="="
-                onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
-            <td><input type="button" class="btnOpps" name="btnOpps" value="&#960;"
-                onclick="addChar(this.form.display,'3.14159265359')"></td>
-            <td><input type="button" class="btnMath" name="btnMath" value="%" onclick=" percent(this.form.display)">
-            </td>
-          </tr>
-          <tr>
-            <td><input type="button" class="btnNum" name="btnNum" value="7" onclick="addChar(this.form.display, '7')">
-            </td>
-            <td><input type="button" class="btnNum" name="btnNum" value="8" onclick="addChar(this.form.display, '8')">
-            </td>
-            <td><input type="button" class="btnNum" name="btnNum" value="9" onclick="addChar(this.form.display, '9')">
-            </td>
-            <td><input type="button" class="btnOpps" name="btnOpps" value="x&#94;"
-                onclick="if(checkNum(this.form.display.value)) { exp(this.form) }"></td>
-            <td><input type="button" class="btnMath" name="btnMath" value="/" onclick="addChar(this.form.display, '/')">
-            </td>
-          <tr>
-            <td><input type="button" class="btnNum" name="btnNum" value="4" onclick="addChar(this.form.display, '4')">
-            </td>
-            <td><input type="button" class="btnNum" name="btnNum" value="5" onclick="addChar(this.form.display, '5')">
-            </td>
-            <td><input type="button" class="btnNum" name="btnNum" value="6" onclick="addChar(this.form.display, '6')">
-            </td>
-            <td><input type="button" class="btnOpps" name="btnOpps" value="ln"
-                onclick="if(checkNum(this.form.display.value)) { ln(this.form) }"></td>
-            <td><input type="button" class="btnMath" name="btnMath" value="*" onclick="addChar(this.form.display, '*')">
-            </td>
-          </tr>
-          <tr>
-            <td><input type="button" class="btnNum" name="btnNum" value="1" onclick="addChar(this.form.display, '1')">
-            </td>
-            <td><input type="button" class="btnNum" name="btnNum" value="2" onclick="addChar(this.form.display, '2')">
-            </td>
-            <td><input type="button" class="btnNum" name="btnNum" value="3" onclick="addChar(this.form.display, '3')">
-            </td>
-            <td><input type="button" class="btnOpps" name="btnOpps" value="&radic;"
-                onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
-            <td><input type="button" class="btnMath" name="btnMath" value="-" onclick="addChar(this.form.display, '-')">
-            </td>
-          </tr>
-          <tr>
-            <td><input type="button" class="btnMath" name="btnMath" value="&#177"
-                onclick="changeSign(this.form.display)">
-            </td>
-            <td><input type="button" class="btnNum" name="btnNum" value="0" onclick="addChar(this.form.display, '0')">
-            </td>
-            <td><input type="button" class="btnMath" name="btnMath" value="&#46;"
-                onclick="addChar(this.form.display, '&#46;')"></td>
-            <td><input type="button" class="btnOpps" name="btnOpps" value="x&#50;"
-                onclick="if(checkNum(this.form.display.value)) { square(this.form) }"></td>
-            <td><input type="button" class="btnMath" name="btnMath" value="+" onclick="addChar(this.form.display, '+')">
-            </td>
-          </tr>
-          <tr>
-            <td><input type="button" class="btnMath" name="btnMath" value="(" onclick="addChar(this.form.display, '(')">
-            </td>
-            <td><input type="button" class="btnMath" name="btnMath" value=")" onclick="addChar(this.form.display,')')">
-            </td>
-            <td><input type="button" class="btnMath" name="btnMath" value="cos"
-                onclick="if(checkNum(this.form.display.value)) { cos(this.form) }"></td>
-            <td><input type="button" class="btnMath" name="btnMath" value="sin"
-                onclick="if(checkNum(this.form.display.value)) { sin(this.form) }"></td>
-            <td><input type="button" class="btnMath" name="btnMath" value="tan"
-                onclick="if(checkNum(this.form.display.value)) { tan(this.form) }"></td>
-          </tr>
-          </tabel>
-          <script src="assets/js/calculadora2.js"></script>
-      </form>
+  <!-- HEADER -->
+  <div class="row bg-dark min-flex text-white">
+    <div class="header text-center">
+      <h1>Calculadora Científica</h1>
     </div>
-  </main>
+  </div>
+
+  <div class="container my-5 text-center">
+    <!--   <div class="row justify-content-start"> -->
+    <!--     <div class="col-12"> -->
+  </div>
+  <form name="sci-calc">
+
+    <table class="calculator" cellspacing="0" cellpadding="1">
+      <tr>
+        <td colspan="5"><input id="display" name="display" value="0" size="28" maxlength="25"></td>
+      </tr>
+      <tr>
+        <td><input type="button" class="btnTop" name="btnTop" value="C" onclick="this.form.display.value=  0 ">
+        </td>
+        <td><input type="button" class="btnTop" name="btnTop" value="<--" onclick="deleteChar(this.form.display)">
+        </td>
+        <td><input type="button" class="btnTop" name="btnTop" value="="
+            onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
+        <td><input type="button" class="btnOpps" name="btnOpps" value="&#960;"
+            onclick="addChar(this.form.display,'3.14159265359')"></td>
+        <td><input type="button" class="btnMath" name="btnMath" value="%" onclick=" percent(this.form.display)">
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" class="btnNum" name="btnNum" value="7" onclick="addChar(this.form.display, '7')">
+        </td>
+        <td><input type="button" class="btnNum" name="btnNum" value="8" onclick="addChar(this.form.display, '8')">
+        </td>
+        <td><input type="button" class="btnNum" name="btnNum" value="9" onclick="addChar(this.form.display, '9')">
+        </td>
+        <td><input type="button" class="btnOpps" name="btnOpps" value="x&#94;"
+            onclick="if(checkNum(this.form.display.value)) { exp(this.form) }"></td>
+        <td><input type="button" class="btnMath" name="btnMath" value="/" onclick="addChar(this.form.display, '/')">
+        </td>
+      <tr>
+        <td><input type="button" class="btnNum" name="btnNum" value="4" onclick="addChar(this.form.display, '4')">
+        </td>
+        <td><input type="button" class="btnNum" name="btnNum" value="5" onclick="addChar(this.form.display, '5')">
+        </td>
+        <td><input type="button" class="btnNum" name="btnNum" value="6" onclick="addChar(this.form.display, '6')">
+        </td>
+        <td><input type="button" class="btnOpps" name="btnOpps" value="ln"
+            onclick="if(checkNum(this.form.display.value)) { ln(this.form) }"></td>
+        <td><input type="button" class="btnMath" name="btnMath" value="*" onclick="addChar(this.form.display, '*')">
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" class="btnNum" name="btnNum" value="1" onclick="addChar(this.form.display, '1')">
+        </td>
+        <td><input type="button" class="btnNum" name="btnNum" value="2" onclick="addChar(this.form.display, '2')">
+        </td>
+        <td><input type="button" class="btnNum" name="btnNum" value="3" onclick="addChar(this.form.display, '3')">
+        </td>
+        <td><input type="button" class="btnOpps" name="btnOpps" value="&radic;"
+            onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
+        <td><input type="button" class="btnMath" name="btnMath" value="-" onclick="addChar(this.form.display, '-')">
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" class="btnMath" name="btnMath" value="&#177" onclick="changeSign(this.form.display)">
+        </td>
+        <td><input type="button" class="btnNum" name="btnNum" value="0" onclick="addChar(this.form.display, '0')">
+        </td>
+        <td><input type="button" class="btnMath" name="btnMath" value="&#46;"
+            onclick="addChar(this.form.display, '&#46;')"></td>
+        <td><input type="button" class="btnOpps" name="btnOpps" value="x&#50;"
+            onclick="if(checkNum(this.form.display.value)) { square(this.form) }"></td>
+        <td><input type="button" class="btnMath" name="btnMath" value="+" onclick="addChar(this.form.display, '+')">
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" class="btnMath" name="btnMath" value="(" onclick="addChar(this.form.display, '(')">
+        </td>
+        <td><input type="button" class="btnMath" name="btnMath" value=")" onclick="addChar(this.form.display,')')">
+        </td>
+        <td><input type="button" class="btnMath" name="btnMath" value="cos"
+            onclick="if(checkNum(this.form.display.value)) { cos(this.form) }"></td>
+        <td><input type="button" class="btnMath" name="btnMath" value="sin"
+            onclick="if(checkNum(this.form.display.value)) { sin(this.form) }"></td>
+        <td><input type="button" class="btnMath" name="btnMath" value="tan"
+            onclick="if(checkNum(this.form.display.value)) { tan(this.form) }"></td>
+      </tr>
+      </tabel>
+      <script src="assets/js/calculadora2.js"></script>
+  </form>
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </div> -->
   <!-- Script Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
@@ -204,13 +208,12 @@
 </body>
 
 <footer>
-  <!-- Ondas SVG -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#212529" fill-opacity="1"
-      d="M0,224L34.3,224C68.6,224,137,224,206,240C274.3,256,343,288,411,282.7C480,277,549,235,617,224C685.7,213,754,235,823,250.7C891.4,267,960,277,1029,272C1097.1,267,1166,245,1234,229.3C1302.9,213,1371,203,1406,197.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-    </path>
-  </svg>
-
+  <!-- <!-- Ondas SVG --> -->
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"> -->
+  <!--   <path fill="#212529" fill-opacity="1" -->
+  <!--     d="M0,224L34.3,224C68.6,224,137,224,206,240C274.3,256,343,288,411,282.7C480,277,549,235,617,224C685.7,213,754,235,823,250.7C891.4,267,960,277,1029,272C1097.1,267,1166,245,1234,229.3C1302.9,213,1371,203,1406,197.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"> -->
+  <!--   </path> -->
+  <!-- </svg> -->
 </footer>
 
 </html>
