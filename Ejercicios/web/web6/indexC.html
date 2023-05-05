@@ -42,14 +42,6 @@
     .bs-example button {
       margin: 10px;
     }
-
-    footer {
-      color: aliceblue;
-      bottom: 0;
-      width: 100%;
-      position: absolute;
-
-    }
   </style>
 
 </head>
@@ -81,28 +73,18 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="dimetunombre.html">Tell me your name</a></li>
               <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="./calculadora.html">Calculator</a>
-              </li>
-
-              <li>
-                <a class="dropdown-item" href="./calculadora2.html">Calculator 2</a>
+                <a class="dropdown-item" href="./indexC.html">Calculator</a>
               </li>
               <li>
                 <hr class="dropdown-divider" />
               </li>
               <li>
-                <a class="dropdown-item" href="./numberGuessing.html">Number Guessing</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./dateCalculator.html">Date calculator</a>
+                <a class="dropdown-item disabled" href="#">Something else here</a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Github</a>
+            <a class="nav-link disabled">Disabled</a>
           </li>
         </ul>
       </div>
@@ -116,13 +98,13 @@
       <!-- HEADER -->
       <div class="row bg-dark min-flex text-white">
         <div class="header text-center">
-          <h1>Calculadora Bootstrap</h1>
+          <h1>Calculadora HTML y JS</h1>
         </div>
       </div>
 
       <!-- CALCULADORA -->
       <div class="row bg-secondary min-flex">
-        <div class="calculadora container col-5 bg-success border p-2 m-3">
+        <div class="calculadora container col-8 bg-success border p-2 m-3">
           <div class="row cont-display min-flex">
             <div class="display text-white bg-dark w-75 my-3">
               <div id="valor-anterior"></div>
@@ -166,7 +148,7 @@
 
       <div class="row bg-dark min-flex text-white">
         <div class="footer text-center">
-          <!-- <h1>&copy; TheCoolface</h1> -->
+          <h1>&copy; TheCoolface</h1>
         </div>
       </div>
     </div>
@@ -177,16 +159,5 @@
     crossorigin="anonymous"></script>
 
 </body>
-
-<footer>
-  <!-- Ondas SVG -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#212529" fill-opacity="1"
-      d="M0,224L34.3,224C68.6,224,137,224,206,240C274.3,256,343,288,411,282.7C480,277,549,235,617,224C685.7,213,754,235,823,250.7C891.4,267,960,277,1029,272C1097.1,267,1166,245,1234,229.3C1302.9,213,1371,203,1406,197.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-    </path>
-  </svg>
-
-</footer>
-
 
 </html>
