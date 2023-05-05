@@ -2,18 +2,25 @@
 <html lang="en">
 
 <head>
-  <title>calculadora</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./assets/styles/main.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalculadoraHtml y JS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles/estilos.css">
+  <script src="./assets/js/Calculator.js"></script>
+  <script src="./assets/js/Display.js"></script>
+  <script src="./assets/js/index.js" defer></script>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
   <!-- Bootstrap icons CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
-
+  <!-- Boostrap stylesheetfor code (but it invalidate the local one) -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
   <!-- CSS personalizado -->
   <link rel="stylesheet" href="./assets/styles/main.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -35,7 +42,16 @@
     .bs-example button {
       margin: 10px;
     }
+
+    footer {
+      color: aliceblue;
+      bottom: 0;
+      width: 100%;
+      position: absolute;
+
+    }
   </style>
+
 </head>
 
 <body>
@@ -65,26 +81,104 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="dimetunombre.html">Tell me your name</a></li>
               <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
                 <a class="dropdown-item" href="./calculadora.html">Calculator</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="./calculadora2.html">Calculator 2</a>
               </li>
               <li>
                 <hr class="dropdown-divider" />
               </li>
               <li>
-                <a class="dropdown-item disabled" href="#">Something else here</a>
+                <a class="dropdown-item" href="./numberGuessing.html">Number Guessing</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./dateCalculator.html">Date calculator</a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link disabled">Github</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <h1>En algun momento habra una calculadora aqui</h1>
 
+  <main class="cont-general min-flex">
+    <div class="sub-general container">
+
+      <!-- HEADER -->
+      <div class="row bg-dark min-flex text-white">
+        <div class="header text-center">
+          <h1>Calculadora HTML y JS</h1>
+        </div>
+      </div>
+
+      <!-- CALCULADORA -->
+      <div class="row bg-secondary min-flex">
+        <div class="calculadora container col-8 bg-success border p-2 m-3">
+          <div class="row cont-display min-flex">
+            <div class="display text-white bg-dark w-75 my-3">
+              <div id="valor-anterior"></div>
+              <div id="valor-actual"></div>
+            </div>
+          </div>
+
+          <!-- BOTONES -->
+          <div class="row min-flex">
+            <button class="btn btn-secondary col-2" onclick="display.deleteAll()">C</button>
+            <button class="btn btn-secondary col-2" onclick="display.deleteValue()">&larr;</button>
+            <button class="btn btn-dark col-2 operador" value="potenciar">^</button>
+            <button class="btn btn-dark col-2 operador" value="raiz">√x</button>
+          </div>
+          <div class="row min-flex">
+            <button class="btn btn-light col-2 numero">7</button>
+            <button class="btn btn-light col-2 numero">8</button>
+            <button class="btn btn-light col-2 numero">9</button>
+            <button class="btn btn-dark col-2 operador" value="dividir">%</button>
+          </div>
+          <div class="row min-flex">
+            <button class="btn btn-light col-2 numero">6</button>
+            <button class="btn btn-light col-2 numero">5</button>
+            <button class="btn btn-light col-2 numero">4</button>
+            <button class="btn btn-dark col-2 operador" value="multiplicar">x</button>
+          </div>
+          <div class="row min-flex">
+            <button class="btn btn-light col-2 numero">3</button>
+            <button class="btn btn-light col-2 numero">2</button>
+            <button class="btn btn-light col-2 numero">1</button>
+            <button class="btn btn-dark col-2 operador" value="restar">-</button>
+          </div>
+          <div class="row min-flex">
+            <button class="btn btn-light col-2 numero">0</button>
+            <button class="btn btn-light col-2 numero">.</button>
+            <button class="btn btn-light col-2 operador" value="igual">=</button>
+            <button class="btn btn-dark col-2 operador" value="sumar">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row bg-dark min-flex text-white">
+        <div class="footer text-center">
+          <h1>&copy; TheCoolface</h1>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Script Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+</body>
+
+<footer>
   <!-- Ondas SVG -->
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#212529" fill-opacity="1"
@@ -92,10 +186,7 @@
     </path>
   </svg>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+</footer>
 
-</body>
 
 </html>
