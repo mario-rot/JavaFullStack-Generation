@@ -49,5 +49,28 @@ const getProductsWithAwait = async (httpUrl) => {
 
 };
 
-getProductsWithAwait(url);
+// getProductsWithAwait(url);
 
+// ---------------------------- Realizar una solicitud POST -----------------------------
+
+const postUser = (url, userData) => {
+  // fetch.then(() => {}).catch(() => {});
+  fetch(url, {
+    method: 'POST', // PUT o DELETE
+    body: JSON.stringify(userData), // datos del usuario, conversion de OBJ a JSON
+    headers: { 'Content-Type': 'application/json' }
+  })
+    .then(response => response.json())
+    // .then(register => console.log(register.createdAt)) // Created at hace que solo devuelva la fecha de la petiecion
+    .then(register => console.log(register))
+    .catch(error => console.error(error))
+}
+
+const user = {
+  name: "El Ivan",
+  job: "leader"
+}
+
+const urlPOST = "https://reqres.in/api/users";
+
+postUser(urlPOST, user)
