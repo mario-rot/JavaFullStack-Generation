@@ -32,7 +32,7 @@ function exp(form) {
 function deleteChar(input) {
   input.value = input.value.substring(0, input.value.length - 1)
 }
-var val = 0.0;
+let val = 0.0;
 function percent(input) {
   val = input.value;
   input.value = input.value + "%";
