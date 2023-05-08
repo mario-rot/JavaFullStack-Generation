@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Document</title>
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+</head>
+
+<body>
+  <h1>Session JS09 uso de NPM</h1>
+  <button onclick="getUsersFetch()" type="button" class="btn btn-primary">Request Users Fetch</button>
+  <button onclick="getUsersAxios()" type="button" class="btn btn-success">Request Users Axios Then-Catch</button>
+  <button onclick="getUsersAxiosAsyncAwait()" type="button" class="btn btn-warning">Request Users Axios
+    Async-Await</button>
+  <button onclick="postUsers()" type="button" class="btn btn-info">Post users</button>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
+  <script src="./assets/scripts/index.js"></script>
+</body>
+
+</html>
