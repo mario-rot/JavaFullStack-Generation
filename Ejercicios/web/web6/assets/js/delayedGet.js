@@ -35,18 +35,20 @@ const recoverData = () => {
   const timeDiff = Math.floor((Math.abs(lastUpdate - new Date()) / 1000) / 60);
 
   if (updatesCount === 0 || timeDiff >= timeTreshold) {
-    console.log(`Time diff greater than ${timeTreshold} minutes`);
+    console.log(`Time diff greater than ${timeTreshold} minutes or first iteration - Getting data from the API`);
     if (updatesCount > 0)
       document.getElementById("cards").remove()
     getUsersFromReqres(httpUrl);
     lastUpdate = new Date();
     updatesCount += 1;
   } else {
-    console.log(`Time diff lower than ${timeTreshold} minutes`);
+    console.log(`Time diff lower than ${timeTreshold} minutes - Getting data from local storage`);
+    spinner.style.display = "inline"
     document.getElementById("cards").remove()
     // users = localStorage.getItem("reqresUsers");
     const usersObject = JSON.parse(localStorage.reqresUsers);
     loadElements(usersObject);
+    spinner.style.display = "none";
   }
 
 }
