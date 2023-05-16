@@ -84,9 +84,8 @@ public class FlujoControl {
     System.out.println(inRange >= 1 && inRange <= 10 ? respuestaTrue : respuestaFalse);
 
     inRange = 18;
-    String texto = (inRange >= 1 && inRange <= 10) ?
-            "La seleccion esta dentro de rango" :
-            "La seleccion esta fuera de rango";
+    String texto = (inRange >= 1 && inRange <= 10) ? "La seleccion esta dentro de rango"
+        : "La seleccion esta fuera de rango";
     System.out.println(texto);
 
     // ---------------------------------------------------------------
@@ -94,8 +93,34 @@ public class FlujoControl {
 
     Scanner myScan;
     myScan = new Scanner(System.in);
-    System.out.print("Escribe tu nombre: ");
-    String myName = myScan.nextLine(); // leer hasta /n
-    System.out.println("Tu nombre es: " + myName);
+    // Scanner myScan = new Scanner(System.in);
+    // System.out.print("Escribe tu nombre: ");
+    // String myName = myScan.next(); // leer hasta /n
+    // System.out.println("Tu nombre es: " + myName);
+    // String myLastName = myScan.next();
+    // System.out.println("Tu apellido es: " + myLastName);
+    // myScan.nextLine();// consumimos el resto de caracteres (/n) del buffer
+
+    // System.out.print("Escribe tu edad en letras: ");
+    // String myAge = myScan.nextLine();
+    // System.out.println("Tu edad es: " + myAge);
+
+    // System.out.print("Escribe tu edad: ");
+    // String myAgeTxt = myScan.nextLine();
+    // int myAge = Integer.parseInt(myAgeTxt);
+    // System.out.println("Tu edad es: " + myAge);
+    // System.out.println("Pronto cumpliras: " + (myAge + 1));
+
+    System.out.print("Escribe tu edad: ");
+
+    if (myScan.hasNextInt()) {
+      int myAgeInt = myScan.nextInt();
+      myScan.nextLine(); // Para consumir lo que resta de la linea y no haya problema despues
+      System.out.println("Tu edad es: " + myAgeInt);
+      System.out.println("Pronto cumpliras: " + (myAgeInt + 1));
+    } else {
+      System.out.println("- No introdujiste un numero - ");
+    }
+
   }
 }
