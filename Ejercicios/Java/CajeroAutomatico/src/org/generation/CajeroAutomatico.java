@@ -130,8 +130,8 @@ public class CajeroAutomatico {
         default:
           if (++this.failedChoices >= 3) {
             clearConsole();
-            System.out.printf("\n\n\n\n Invalid option - %s failed attemps -", this.failedChoices);
-            System.out.println("\n------------  ATM CLOSED! -----------");
+            System.out.printf("\n\n\n\n   Invalid option - %s failed attemps -", this.failedChoices);
+            System.out.println("\n  ------------  ATM CLOSED! -----------");
             wait(3000);
             System.exit(1);
           } else {
@@ -143,10 +143,18 @@ public class CajeroAutomatico {
           break;
       }
     } else {
-      clearConsole();
-      System.out.printf("\n\n\n\n  Invalid option - %s failed attemps - try again %n", this.failedChoices);
-      wait(3000);
-      menu();
+      if (++this.failedChoices >= 3) {
+        clearConsole();
+        System.out.printf("\n\n\n\n   Invalid option - %s failed attemps -", this.failedChoices);
+        System.out.println("\n------------  ATM CLOSED! -----------");
+        wait(3000);
+        System.exit(1);
+      } else {
+        clearConsole();
+        System.out.printf("\n\n\n\n  Invalid option - %s failed attemps - try again %n", this.failedChoices);
+        wait(3000);
+        menu();
+      }
     }
   }
 
