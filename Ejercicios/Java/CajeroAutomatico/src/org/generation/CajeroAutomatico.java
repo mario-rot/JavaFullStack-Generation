@@ -197,6 +197,10 @@ public class CajeroAutomatico {
     sc.close();
   }
 
+  private void donations() {
+    System.out.println();
+  }
+
   private void checkBalance() {
     clearConsole();
     String printBalance = "\t  ----------------------  Balance Inquiry  ---------------------- %n%n"
