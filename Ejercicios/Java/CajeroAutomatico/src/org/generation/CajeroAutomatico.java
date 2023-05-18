@@ -119,6 +119,7 @@ public class CajeroAutomatico {
         break;
       case 9:
         System.out.println("Exit");
+        exitATM();
         break;
       default:
         if (++this.failedChoices >= 3) {
@@ -177,8 +178,9 @@ public class CajeroAutomatico {
   }
 
   private static void exitATM() {
-    String printGoodBye = "\n\n\n\n\t\t\t Thank you for trusting Generation Bank \n\t"
-        + "\t\t ------------  Come back soon ----------- \n\n\n\n";
+    clearConsole();
+    String printGoodBye = "\n\n\n\n\t\t\tThank you for trusting Generation Bank \n\t"
+        + "\t\t-----------  Come back soon ----------- \n\n\n\n";
     printBankFrame(printGoodBye);
 
   }
