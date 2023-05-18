@@ -45,6 +45,7 @@ public class CajeroAutomatico {
   String clientName;
   String clientPass;
   int balance = 10_000;
+  int failedChoices = 0;
 
   CajeroAutomatico() {
     start();
@@ -54,7 +55,7 @@ public class CajeroAutomatico {
     clearConsole();
     Scanner sc = new Scanner(System.in);
 
-    printBankFrame("        Welcome! Please introduce your name, then your password (CH26*)%n%n");
+    printBankFrame("        Welcome! Please introduce your name, then your password (CH26*)");
 
     System.out.print("Name: ");
     String name = sc.next();
@@ -66,7 +67,6 @@ public class CajeroAutomatico {
     if (name.length() >= 5 && pass.equals("CH26")) {
       this.clientName = name;
       this.clientPass = pass;
-      clearConsole();
       menu();
     } else {
       clearConsole();
@@ -74,16 +74,72 @@ public class CajeroAutomatico {
       wait(3000);
       start();
     }
+    sc.close();
   }
 
   private void menu() {
-    System.out.printf("Hello %s %n", this.clientName);
+    clearConsole();
+
+    String menuOptions = "\t Hello " + this.clientName + " %n"
+        + "\t Enter the number according to the transaction you want to execute. \n\n"
+        + "\n\t\t 1) Cash Withdrawal"
+        + "\n\t\t 2) Deposit"
+        + "\n\t\t 3) Balance Inquiry"
+        + "\n\t\t 4) Complaints"
+        + "\n\t\t 5) Last transaction"
+        + "\n\t\t 9) Exit ATM";
+    printBankFrame(menuOptions);
+
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Put your selection: ");
+    int menuChoice = sc.nextInt();
+
+    switch (menuChoice) {
+      case 1:
+        System.out.println("Cash Withdrawal");
+        this.failedChoices = 0;
+        break;
+      case 2:
+        System.out.println("Deposit");
+        this.failedChoices = 0;
+        break;
+      case 3:
+        System.out.println("Balance");
+        this.failedChoices = 0;
+        break;
+      case 4:
+        System.out.println("Complaints");
+        this.failedChoices = 0;
+        break;
+      case 5:
+        System.out.println("Last transaction");
+        this.failedChoices = 0;
+        break;
+      case 9:
+        System.out.println("Exit");
+        break;
+      default:
+        if (++this.failedChoices >= 3) {
+          clearConsole();
+          System.out.printf("\n\n\n\n Invalid option - %s failed attemps -", this.failedChoices);
+          System.out.println("\n------------  ATM CLOSED! -----------");
+          wait(3000);
+          System.exit(1);
+        } else {
+          clearConsole();
+          System.out.printf("\n\n\n\n  Invalid option - %s failed attemps - try again %n", this.failedChoices);
+          wait(3000);
+          menu();
+          break;
+        }
+    }
+    System.out.println("Your selection is " + menuChoice);
   }
 
   private static void printBankFrame(String data) {
     System.out.println("| ------------------------------ Generation Bank ------------------------------ |\n");
     System.out.printf(data);
-    System.out.println("| ----------------------------------------------------------------------------- |\n");
+    System.out.println("\n\n| ----------------------------------------------------------------------------- |\n");
 
   }
 
