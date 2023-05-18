@@ -111,6 +111,7 @@ public class CajeroAutomatico {
         break;
       case 4:
         System.out.println("Complaints");
+        complaints();
         this.failedChoices = 0;
         break;
       case 5:
@@ -177,12 +178,22 @@ public class CajeroAutomatico {
     sc.close();
   }
 
-  private static void exitATM() {
+  private void complaints() {
+    clearConsole();
+    String print404 = "\n\n\n\n\t\t\tThank you for trusting Generation Bank \n\t"
+        + "\t\t-*-*-*-*-*-*-*-*-  404  -*-*-*-*-*-*-*-\n"
+        + "\t\t-- What on earth are you doing here!? -- \n\n"
+        + "\t  -- This section is not available at this time -- \n\n\n\n";
+    printBankFrame(print404);
+    wait(4000);
+    menu();
+  }
+
+  private void exitATM() {
     clearConsole();
     String printGoodBye = "\n\n\n\n\t\t\tThank you for trusting Generation Bank \n\t"
-        + "\t\t-----------  Come back soon ----------- \n\n\n\n";
+        + "\t\t----------  Come back soon  ----------- \n\n\n\n";
     printBankFrame(printGoodBye);
-
   }
 
   private static void printBankFrame(String data) {
