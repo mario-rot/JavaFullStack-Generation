@@ -47,6 +47,7 @@ public class CajeroAutomatico {
   String clientPass;
   int balance = 10_000;
   int failedChoices = 0;
+  String lastTransaction = "\n\t\t\t    -- No transactions yet -- %n%n%n%n";
 
   CajeroAutomatico() {
     start();
@@ -97,26 +98,27 @@ public class CajeroAutomatico {
 
     switch (menuChoice) {
       case 1:
-        System.out.println("Cash Withdrawal");
-        cashWithdrawal();
+        this.lastTransaction = "\n\t\t\t      -- Cash Withdrawal -- %n%n";
         this.failedChoices = 0;
+        cashWithdrawal();
         break;
       case 2:
-        System.out.println("Deposit");
+        this.lastTransaction = "\n\t\t\t          -- Deposit -- %n%n";
         this.failedChoices = 0;
         break;
       case 3:
-        System.out.println("Balance");
+        this.lastTransaction = "\n\t\t\t      -- Balance Inquiry -- %n%n";
         this.failedChoices = 0;
+        checkBalance();
         break;
       case 4:
-        System.out.println("Complaints");
-        complaints();
+        this.lastTransaction = "\n\t\t\t        -- Complaints  -- %n%n";
         this.failedChoices = 0;
+        complaints();
         break;
       case 5:
-        System.out.println("Last transaction");
         this.failedChoices = 0;
+        checkLastTransaction();
         break;
       case 9:
         System.out.println("Exit");
@@ -143,7 +145,7 @@ public class CajeroAutomatico {
     clearConsole();
 
     String menuOptions = "\t ----------------------  Cash Withdrawal  ---------------------- %n%n"
-        + "\t ---> Your current balance is: " + formatNumber(this.balance) + "%n%n"
+        + "\t ---> Your current balance is: $" + formatNumber(this.balance) + "%n%n"
         + "\t --> You cannot withdraw more than $6,000\n"
         + "\t --> Only multiples of $50 can be withdrawn \n\n"
         + "\t ----------------  Enter the amount to withdraw  ----------------";
@@ -157,7 +159,7 @@ public class CajeroAutomatico {
       if (amount > 0 && amount % 50 == 0 && amount < 6000) {
         clearConsole();
         this.balance -= amount;
-        String printBalance = "\n\n\n\n\t\t\t Your remaining balance is: " + formatNumber(this.balance) + "\n\n\n\n";
+        String printBalance = "\n\n\n\n\t\t\t Your remaining balance is: $" + formatNumber(this.balance) + "\n\n\n\n";
         printBankFrame(printBalance);
         wait(4000);
         menu();
@@ -178,20 +180,42 @@ public class CajeroAutomatico {
     sc.close();
   }
 
+  private void checkBalance() {
+    clearConsole();
+    String printBalance = "\t  ----------------------  Balance Inquiry  ---------------------- %n%n"
+        + "\n\n\t\t\t Your current balance is: $" + formatNumber(this.balance) + "\n\n\n\n";
+    printBankFrame(printBalance);
+    wait(4000);
+    menu();
+  }
+
   private void complaints() {
     clearConsole();
-    String print404 = "\n\n\n\n\t\t  -*-*-*-*-*-*-*-*-  404  -*-*-*-*-*-*-*-\n"
-        + "\t\t -- What on earth are you doing here!? -- \n\n"
-        + "\t     -- This section is not available at this time -- \n\n\n\n";
+    String print404 = "\t    ----------------------  Complaints  ---------------------- %n%n"
+        + "\n\n\t\t    -*-*-*-*-*-*-*-*-  404  -*-*-*-*-*-*-*-\n"
+        + "\t\t   -- What on earth are you doing here!? -- \n\n"
+        + "\t       -- This section is not available at this time -- \n\n\n\n";
     printBankFrame(print404);
+    wait(5000);
+    menu();
+  }
+
+  private void checkLastTransaction() {
+    clearConsole();
+    String printLastTransaction = "\t ------------------  Check Last Transaction  ----------------- %n%n"
+        + "\n\n\t\t\t    Your last transaction is:"
+        + lastTransaction;
+    printBankFrame(printLastTransaction);
+    this.lastTransaction = "\n\t\t\t   -- Check Last Transaction -- %n%n";
     wait(4000);
     menu();
   }
 
   private void exitATM() {
     clearConsole();
-    String printGoodBye = "\n\n\n\n\t\t\tThank you for trusting Generation Bank \n\t"
-        + "\t\t----------  Come back soon  ----------- \n\n\n\n";
+    String printGoodBye = "\t    ----------------------  Exit ATM  ---------------------- %n%n"
+        + "\n\n\t\t    Thank you for trusting Generation Bank \n\t"
+        + "\t    ----------  Come back soon  ----------- \n\n\n\n";
     printBankFrame(printGoodBye);
   }
 
