@@ -94,50 +94,59 @@ public class CajeroAutomatico {
 
     Scanner sc = new Scanner(System.in);
     System.out.print("Put your selection: ");
-    int menuChoice = sc.nextInt();
 
-    switch (menuChoice) {
-      case 1:
-        this.lastTransaction = "\n\t\t\t      -- Cash Withdrawal -- %n%n";
-        this.failedChoices = 0;
-        cashWithdrawal();
-        break;
-      case 2:
-        this.lastTransaction = "\n\t\t\t          -- Deposit -- %n%n";
-        this.failedChoices = 0;
-        break;
-      case 3:
-        this.lastTransaction = "\n\t\t\t      -- Balance Inquiry -- %n%n";
-        this.failedChoices = 0;
-        checkBalance();
-        break;
-      case 4:
-        this.lastTransaction = "\n\t\t\t        -- Complaints  -- %n%n";
-        this.failedChoices = 0;
-        complaints();
-        break;
-      case 5:
-        this.failedChoices = 0;
-        checkLastTransaction();
-        break;
-      case 9:
-        System.out.println("Exit");
-        exitATM();
-        break;
-      default:
-        if (++this.failedChoices >= 3) {
-          clearConsole();
-          System.out.printf("\n\n\n\n Invalid option - %s failed attemps -", this.failedChoices);
-          System.out.println("\n------------  ATM CLOSED! -----------");
-          wait(3000);
-          System.exit(1);
-        } else {
-          clearConsole();
-          System.out.printf("\n\n\n\n  Invalid option - %s failed attemps - try again %n", this.failedChoices);
-          wait(3000);
-          menu();
-        }
-        break;
+    if (sc.hasNextInt()) {
+
+      int menuChoice = sc.nextInt();
+
+      switch (menuChoice) {
+        case 1:
+          this.lastTransaction = "\n\t\t\t      -- Cash Withdrawal -- %n%n";
+          this.failedChoices = 0;
+          cashWithdrawal();
+          break;
+        case 2:
+          this.lastTransaction = "\n\t\t\t          -- Deposit -- %n%n";
+          this.failedChoices = 0;
+          break;
+        case 3:
+          this.lastTransaction = "\n\t\t\t      -- Balance Inquiry -- %n%n";
+          this.failedChoices = 0;
+          checkBalance();
+          break;
+        case 4:
+          this.lastTransaction = "\n\t\t\t        -- Complaints  -- %n%n";
+          this.failedChoices = 0;
+          complaints();
+          break;
+        case 5:
+          this.failedChoices = 0;
+          checkLastTransaction();
+          break;
+        case 9:
+          System.out.println("Exit");
+          exitATM();
+          break;
+        default:
+          if (++this.failedChoices >= 3) {
+            clearConsole();
+            System.out.printf("\n\n\n\n Invalid option - %s failed attemps -", this.failedChoices);
+            System.out.println("\n------------  ATM CLOSED! -----------");
+            wait(3000);
+            System.exit(1);
+          } else {
+            clearConsole();
+            System.out.printf("\n\n\n\n  Invalid option - %s failed attemps - try again %n", this.failedChoices);
+            wait(3000);
+            menu();
+          }
+          break;
+      }
+    } else {
+      clearConsole();
+      System.out.printf("\n\n\n\n  Invalid option - %s failed attemps - try again %n", this.failedChoices);
+      wait(3000);
+      menu();
     }
   }
 
