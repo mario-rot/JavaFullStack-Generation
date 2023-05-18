@@ -65,7 +65,7 @@ public class CajeroAutomatico {
     String pass = sc.next();
     sc.nextLine();
 
-    if (name.length() >= 5 && pass.equals("CH26")) {
+    if (name.length() >= 5 && pass.equals("CH26*")) {
       this.clientName = name;
       this.clientPass = pass;
       menu();
@@ -174,6 +174,13 @@ public class CajeroAutomatico {
       cashWithdrawal();
     }
     sc.close();
+  }
+
+  private static void exitATM() {
+    String printGoodBye = "\n\n\n\n\t\t\t Thank you for trusting Generation Bank \n\t"
+        + "\t\t ------------  Come back soon ----------- \n\n\n\n";
+    printBankFrame(printGoodBye);
+
   }
 
   private static void printBankFrame(String data) {
