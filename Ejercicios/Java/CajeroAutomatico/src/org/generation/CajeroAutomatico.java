@@ -18,8 +18,8 @@ public class CajeroAutomatico {
    * - Mostrar la cantidad disponible a retirar
    * - No se puede retirar mas de $6,000.00
    * - Solo se puede retirar en multiplos de $50
-   * - Despues de retirar se debe preguntar si desea donar ($200)
-   * 2) Hacer depositos
+   * - Despues de retirar se debe preguntar si desea donar ($200) <------- FALTA!
+   * 2) Hacer depositos <------- Falta!
    * Mostrar un menu con las opciones:
    * 1> Cuenta de cheques (sumar al saldo actual)
    * - Solo multiplos de $50
