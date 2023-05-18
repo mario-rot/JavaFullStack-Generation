@@ -2,6 +2,7 @@ package org.generation;
 
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
+import java.text.NumberFormat;
 
 public class CajeroAutomatico {
   /**
@@ -97,6 +98,7 @@ public class CajeroAutomatico {
     switch (menuChoice) {
       case 1:
         System.out.println("Cash Withdrawal");
+        cashWithdrawal();
         this.failedChoices = 0;
         break;
       case 2:
@@ -130,10 +132,48 @@ public class CajeroAutomatico {
           System.out.printf("\n\n\n\n  Invalid option - %s failed attemps - try again %n", this.failedChoices);
           wait(3000);
           menu();
-          break;
         }
+        break;
     }
-    System.out.println("Your selection is " + menuChoice);
+  }
+
+  private void cashWithdrawal() {
+    clearConsole();
+
+    String menuOptions = "\t ----------------------  Cash Withdrawal  ---------------------- %n%n"
+        + "\t ---> Your current balance is: " + formatNumber(this.balance) + "%n%n"
+        + "\t --> You cannot withdraw more than $6,000\n"
+        + "\t --> Only multiples of $50 can be withdrawn \n\n"
+        + "\t ----------------  Enter the amount to withdraw  ----------------";
+    printBankFrame(menuOptions);
+
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Amount: ");
+
+    if (sc.hasNextInt()) {
+      int amount = sc.nextInt();
+      if (amount > 0 && amount % 50 == 0 && amount < 6000) {
+        clearConsole();
+        this.balance -= amount;
+        String printBalance = "\n\n\n\n\t\t\t Your remaining balance is: " + formatNumber(this.balance) + "\n\n\n\n";
+        printBankFrame(printBalance);
+        wait(4000);
+        menu();
+      } else {
+        clearConsole();
+        System.out.printf("\n\n\n\n\t\t Invalid amount -- Try again \n");
+        System.out.printf("  Please specify a positive amount less than 6,000 and multiples of 50 \n");
+        wait(3000);
+        cashWithdrawal();
+      }
+    } else {
+      clearConsole();
+      System.out.printf("\n\n\n\n\t\t Invalid amount -- Try again \n");
+      System.out.printf("  Please specify a positive amount less than 6,000 and multiples of 50 \n");
+      wait(3000);
+      cashWithdrawal();
+    }
+    sc.close();
   }
 
   private static void printBankFrame(String data) {
@@ -154,6 +194,14 @@ public class CajeroAutomatico {
     } catch (InterruptedException ex) {
       Thread.currentThread().interrupt();
     }
+  }
+
+  public static String formatNumber(double num) {
+    return NumberFormat.getIntegerInstance().format(num);
+  }
+
+  public static String formatNumber(int num) {
+    return NumberFormat.getIntegerInstance().format(num);
   }
 
 }
