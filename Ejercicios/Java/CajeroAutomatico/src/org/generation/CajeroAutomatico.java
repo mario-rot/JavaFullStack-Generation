@@ -180,10 +180,9 @@ public class CajeroAutomatico {
 
   private void complaints() {
     clearConsole();
-    String print404 = "\n\n\n\n\t\t\tThank you for trusting Generation Bank \n\t"
-        + "\t\t-*-*-*-*-*-*-*-*-  404  -*-*-*-*-*-*-*-\n"
-        + "\t\t-- What on earth are you doing here!? -- \n\n"
-        + "\t  -- This section is not available at this time -- \n\n\n\n";
+    String print404 = "\n\n\n\n\t\t  -*-*-*-*-*-*-*-*-  404  -*-*-*-*-*-*-*-\n"
+        + "\t\t -- What on earth are you doing here!? -- \n\n"
+        + "\t     -- This section is not available at this time -- \n\n\n\n";
     printBankFrame(print404);
     wait(4000);
     menu();
