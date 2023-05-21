@@ -18,7 +18,7 @@ public class CajeroAutomatico {
    * - Mostrar la cantidad disponible a retirar
    * - No se puede retirar mas de $6,000.00
    * - Solo se puede retirar en multiplos de $50
-   * - Despues de retirar se debe preguntar si desea donar ($200) <------- FALTA!
+   * - Despues de retirar se debe preguntar si desea donar ($200)
    * 2) Hacer depositos <------- Falta!
    * Mostrar un menu con las opciones:
    * 1> Cuenta de cheques (sumar al saldo actual)
@@ -45,9 +45,10 @@ public class CajeroAutomatico {
    */
   String clientName;
   String clientPass;
-  int balance = 10_000;
+  Double balance = 10_000.00;
   int failedChoices = 0;
   String lastTransaction = "\n\t\t\t    -- No transactions yet -- %n%n%n%n";
+  boolean open = true;
 
   CajeroAutomatico() {
     start();
@@ -92,30 +93,26 @@ public class CajeroAutomatico {
         + "\n\t\t 9) Exit ATM";
     printBankFrame(menuOptions);
 
-    Scanner sc = new Scanner(System.in);
+    Scanner scMenu = new Scanner(System.in);
     System.out.print("Put your selection: ");
 
-    if (sc.hasNextInt()) {
+    if (scMenu.hasNextInt()) {
 
-      int menuChoice = sc.nextInt();
-
+      int menuChoice = scMenu.nextInt();
       switch (menuChoice) {
         case 1:
-          this.lastTransaction = "\n\t\t\t      -- Cash Withdrawal -- %n%n";
           this.failedChoices = 0;
           cashWithdrawal();
           break;
         case 2:
-          this.lastTransaction = "\n\t\t\t          -- Deposit -- %n%n";
           this.failedChoices = 0;
+          deposit();
           break;
         case 3:
-          this.lastTransaction = "\n\t\t\t      -- Balance Inquiry -- %n%n";
           this.failedChoices = 0;
           checkBalance();
           break;
         case 4:
-          this.lastTransaction = "\n\t\t\t        -- Complaints  -- %n%n";
           this.failedChoices = 0;
           complaints();
           break;
@@ -144,7 +141,7 @@ public class CajeroAutomatico {
       }
     } else {
       if (++this.failedChoices >= 3) {
-        clearConsole();
+        // clearConsole();
         System.out.printf("\n\n\n\n   Invalid option - %s failed attemps -", this.failedChoices);
         System.out.println("\n------------  ATM CLOSED! -----------");
         wait(3000);
@@ -156,6 +153,7 @@ public class CajeroAutomatico {
         menu();
       }
     }
+    scMenu.close();
   }
 
   private void cashWithdrawal() {
@@ -167,19 +165,28 @@ public class CajeroAutomatico {
         + "\t --> Only multiples of $50 can be withdrawn \n\n"
         + "\t ----------------  Enter the amount to withdraw  ----------------";
     printBankFrame(menuOptions);
+    Scanner scCash = new Scanner(System.in);
+    System.out.print("Amount: $");
 
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Amount: ");
-
-    if (sc.hasNextInt()) {
-      int amount = sc.nextInt();
-      if (amount > 0 && amount % 50 == 0 && amount < 6000) {
-        clearConsole();
-        this.balance -= amount;
-        String printBalance = "\n\n\n\n\t\t\t Your remaining balance is: $" + formatNumber(this.balance) + "\n\n\n\n";
-        printBankFrame(printBalance);
-        wait(4000);
-        menu();
+    if (scCash.hasNextInt()) {
+      int amount = scCash.nextInt();
+      if (amount > 0 && amount % 50 == 0 && amount <= 6000) {
+        if (amount > this.balance) {
+          clearConsole();
+          printBankFrame("\n\n\n The amount you are trying to withdraw is greater than your current balance: $" +
+              this.balance + ". \n\t Please, choose an amount less than your current balance.\n\n\n");
+          wait(4000);
+          cashWithdrawal();
+        } else {
+          donations(scCash);
+          clearConsole();
+          this.balance -= amount;
+          String printBalance = "\n\n\n\n\t\t\t Your remaining balance is: $" + formatNumber(this.balance) + "\n\n\n\n";
+          printBankFrame(printBalance);
+          wait(4000);
+          this.lastTransaction = "\n\t\t\t  -- Cash Withdrawal: $" + amount + " -- %n%n";
+          menu();
+        }
       } else {
         clearConsole();
         System.out.printf("\n\n\n\n\t\t Invalid amount -- Try again \n");
@@ -194,11 +201,177 @@ public class CajeroAutomatico {
       wait(3000);
       cashWithdrawal();
     }
-    sc.close();
+    scCash.close();
   }
 
-  private void donations() {
-    System.out.println();
+  private void donations(Scanner scCash) {
+    clearConsole();
+    String printDonation = "\n\t Would you like to donate in support of developers-in-training?"
+        + "\n\t\t\t 1) 50"
+        + "\n\t\t\t 2) 100"
+        + "\n\t\t\t 3) 200"
+        + "\n\t\t\t 4) No, I don't want to donate" + "\n";
+    printBankFrame(printDonation);
+    System.out.print("Put your selection: ");
+
+    if (scCash.hasNextInt()) {
+
+      int menuChoice = scCash.nextInt();
+      clearConsole();
+
+      switch (menuChoice) {
+        case 1:
+          this.balance -= 50;
+          printBankFrame("\n\n\n\t\t\t Thank you for that $50.\n\t We are always working to provide"
+              + " you with the best experience\n\n\n\n");
+          wait(3000);
+          break;
+        case 2:
+          this.balance -= 100;
+          printBankFrame("\n\n\n\t\t\t Thank you for that $100.\n\t We are always working to provide"
+              + " you with the best experience\n\n\n\n");
+          wait(3000);
+          break;
+        case 3:
+          this.balance -= 200;
+          printBankFrame("\n\n\n\t\t\t Thank you for that $200.\n\t We are always working to provide"
+              + " you with the best experience\n\n\n\n");
+          wait(3000);
+          break;
+        case 4:
+          printBankFrame("\n\n\n\t\t\t Okay, we respect your decision.\n    It looks like it will take"
+              + " a little longer to fix the complaints section. \n\n\n\n");
+          wait(5000);
+          break;
+        default:
+          clearConsole();
+          System.out.printf("\n\n\n\n\t\t  Invalid option -- try again %n");
+          wait(2000);
+          donations(scCash);
+          break;
+      }
+    }
+  }
+
+  private void deposit() {
+    clearConsole();
+
+    String menuOptions = "\t --------------------------  Deposit  -------------------------- %n%n"
+        + "\tEnter the number according to the transaction you want to execute. \n\n"
+        + "\n\t\t 1) Deposit to checking account"
+        + "\n\t\t 2) Deposit to credit card\n\n";
+    printBankFrame(menuOptions);
+
+    Scanner scDep = new Scanner(System.in);
+    System.out.print("Put your selection: ");
+
+    if (scDep.hasNextInt()) {
+      int selection = scDep.nextInt();
+      if (selection == 1) {
+        checkingAccountDeposit(scDep);
+        wait(2000);
+        menu();
+      } else if (selection == 2) {
+        creditCardDeposit(scDep);
+      } else {
+        clearConsole();
+        System.out.printf("\n\n\n\n\t\t Invalid option -- Try again \n");
+        wait(3000);
+        deposit();
+      }
+    } else {
+      clearConsole();
+      System.out.printf("\n\n\n\n\t\t Invalid option -- Try again \n");
+      wait(3000);
+      deposit();
+    }
+    scDep.close();
+    menu();
+  }
+
+  private void checkingAccountDeposit(Scanner scDep) {
+    clearConsole();
+
+    String menuOptions = "\t ----------------  Deposit to Checking Account  ---------------- %n%n"
+        + "\t ---> Your current balance is: $" + formatNumber(this.balance) + "%n%n"
+        + "\t --> You can only deposit amounts in multiplies of $50 \n\n"
+        + "\t ----------------  Enter the amount to deposit  ----------------";
+    printBankFrame(menuOptions);
+
+    System.out.print("Amount: $");
+
+    if (scDep.hasNextInt()) {
+
+      int amount = scDep.nextInt();
+
+      if (amount > 0 && amount % 50 == 0) {
+        clearConsole();
+        this.balance += amount;
+        String printBalance = "\n\n\n\n\t\t\t Your new balance is: $" + formatNumber(this.balance) + "\n\n\n\n";
+        printBankFrame(printBalance);
+        wait(4000);
+        this.lastTransaction = "\n\t\t\t-- Checking Account Deposit: $" + amount + " -- %n%n";
+        menu();
+      } else {
+        clearConsole();
+        System.out.printf("\n\n\n\n\t\t Invalid amount -- Try again \n");
+        System.out.printf("\t    Please enter an amount in multiples of 50 \n");
+        wait(3000);
+        checkingAccountDeposit(scDep);
+      }
+    } else {
+      clearConsole();
+      System.out.printf("\n\n\n\n\t\t Invalid amount -- Try again \n");
+      System.out.printf("  Please enter an amount in multiples of 50 \n");
+      wait(3000);
+      checkingAccountDeposit(scDep);
+    }
+  }
+
+  private void creditCardDeposit(Scanner scDep) {
+    clearConsole();
+
+    String menuOptions = "\t ------------------  Deposit to Credit Card  ------------------- %n%n"
+        + "\t ---> Your current balance is: $" + formatNumber(this.balance) + "%n%n"
+        + "\t --> The quantity can only be specified up to two digits after the decimal point. \n\n"
+        + "\t ----------------  Enter the amount to deposit  ----------------";
+    printBankFrame(menuOptions);
+
+    System.out.print("Amount: $");
+
+    if (scDep.hasNextDouble()) {
+      Double amount = scDep.nextDouble();
+
+      if (amount > 0) {
+        clearConsole();
+        if (amount > this.balance) {
+          clearConsole();
+          printBankFrame("\n\n\n\n\t\t The amount you are trying to withdraw is greater than your current balance: $" +
+              this.balance + ". \n\t\t\t Please, choose an amount less than your current balance.");
+          wait(4000);
+          creditCardDeposit(scDep);
+        } else {
+          this.balance -= amount;
+          String printBalance = "\n\n\n\n\t\t\t Your new balance is: $" + formatNumber(this.balance) + "\n\n\n\n";
+          printBankFrame(printBalance);
+          wait(4000);
+          this.lastTransaction = "\n\t\t\t-- Credit Card Deposit: $" + amount + " -- %n%n";
+          menu();
+        }
+      } else {
+        clearConsole();
+        System.out.printf("\n\n\n\n\t\t Invalid amount -- Try again \n");
+        System.out.printf(" Please enter an amount specified up to two digits after the decimal point \n");
+        wait(3000);
+        creditCardDeposit(scDep);
+      }
+    } else {
+      clearConsole();
+      System.out.printf("\n\n\n\n\t\t Invalid amount -- Try again \n");
+      System.out.printf(" Please enter an amount specified up to two digits after the decimal point \n");
+      wait(3000);
+      creditCardDeposit(scDep);
+    }
   }
 
   private void checkBalance() {
@@ -227,7 +400,6 @@ public class CajeroAutomatico {
         + "\n\n\t\t\t    Your last transaction is:"
         + lastTransaction;
     printBankFrame(printLastTransaction);
-    this.lastTransaction = "\n\t\t\t   -- Check Last Transaction -- %n%n";
     wait(4000);
     menu();
   }
@@ -236,8 +408,10 @@ public class CajeroAutomatico {
     clearConsole();
     String printGoodBye = "\t    ----------------------  Exit ATM  ---------------------- %n%n"
         + "\n\n\t\t    Thank you for trusting Generation Bank \n\t"
-        + "\t    ----------  Come back soon  ----------- \n\n\n\n";
+        + "\t    ----------  Come back soon  ----------- \n\n\n"
+        + "\t\t    -----------  By: MarioROT  ------------";
     printBankFrame(printGoodBye);
+    System.exit(0);
   }
 
   private static void printBankFrame(String data) {
@@ -261,7 +435,7 @@ public class CajeroAutomatico {
   }
 
   public static String formatNumber(double num) {
-    return NumberFormat.getIntegerInstance().format(num);
+    return NumberFormat.getNumberInstance().format(num);
   }
 
   public static String formatNumber(int num) {
