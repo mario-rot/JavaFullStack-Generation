@@ -3,6 +3,8 @@ package org.generation;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 import java.text.NumberFormat;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class CajeroAutomatico {
   /**
@@ -47,7 +49,7 @@ public class CajeroAutomatico {
   String clientPass;
   Double balance = 10_000.00;
   int failedChoices = 0;
-  String lastTransaction = "\n\t\t\t    -- No transactions yet -- %n%n%n%n";
+  String lastTransaction = "No transactions yet %n%n%n%n";
   boolean open = true;
 
   CajeroAutomatico() {
@@ -173,7 +175,7 @@ public class CajeroAutomatico {
       if (amount > 0 && amount % 50 == 0 && amount <= 6000) {
         if (amount > this.balance) {
           clearConsole();
-          printBankFrame("\n\n\n The amount you are trying to withdraw is greater than your current balance: $" +
+          printBankFrame("\n\n\nThe amount you are trying to withdraw is greater than your current balance: $" +
               this.balance + ". \n\t Please, choose an amount less than your current balance.\n\n\n");
           wait(4000);
           cashWithdrawal();
@@ -184,7 +186,7 @@ public class CajeroAutomatico {
           String printBalance = "\n\n\n\n\t\t\t Your remaining balance is: $" + formatNumber(this.balance) + "\n\n\n\n";
           printBankFrame(printBalance);
           wait(4000);
-          this.lastTransaction = "\n\t\t\t  -- Cash Withdrawal: $" + amount + " -- %n%n";
+          this.lastTransaction = "Cash Withdrawal: $" + amount + "%n%n";
           menu();
         }
       } else {
@@ -250,6 +252,12 @@ public class CajeroAutomatico {
           donations(scCash);
           break;
       }
+    } else {
+      clearConsole();
+      System.out.printf("\n\n\n\n\t\t  Invalid option -- try again %n");
+      wait(2000);
+      scCash.nextLine();
+      donations(scCash);
     }
   }
 
@@ -310,20 +318,21 @@ public class CajeroAutomatico {
         String printBalance = "\n\n\n\n\t\t\t Your new balance is: $" + formatNumber(this.balance) + "\n\n\n\n";
         printBankFrame(printBalance);
         wait(4000);
-        this.lastTransaction = "\n\t\t\t-- Checking Account Deposit: $" + amount + " -- %n%n";
+        this.lastTransaction = "Checking Account Deposit: $" + amount + "%n%n";
         menu();
       } else {
         clearConsole();
         System.out.printf("\n\n\n\n\t\t Invalid amount -- Try again \n");
-        System.out.printf("\t    Please enter an amount in multiples of 50 \n");
+        System.out.printf("\tPlease enter a positive amount in multiples of 50 \n");
         wait(3000);
         checkingAccountDeposit(scDep);
       }
     } else {
       clearConsole();
       System.out.printf("\n\n\n\n\t\t Invalid amount -- Try again \n");
-      System.out.printf("  Please enter an amount in multiples of 50 \n");
-      wait(3000);
+      System.out.printf("\tPlease enter a positive amount in multiples of 50 \n");
+      wait(2000);
+      scDep.nextLine();
       checkingAccountDeposit(scDep);
     }
   }
@@ -346,16 +355,17 @@ public class CajeroAutomatico {
         clearConsole();
         if (amount > this.balance) {
           clearConsole();
-          printBankFrame("\n\n\n\n\t\t The amount you are trying to withdraw is greater than your current balance: $" +
-              this.balance + ". \n\t\t\t Please, choose an amount less than your current balance.");
+          printBankFrame("\n\n\n\n The amount you are trying to transfer is greater than your current balance: $" +
+              this.balance + ". \n\t\t\t Please, choose an amount less than your current balance.\n\n\n");
           wait(4000);
           creditCardDeposit(scDep);
         } else {
           this.balance -= amount;
-          String printBalance = "\n\n\n\n\t\t\t Your new balance is: $" + formatNumber(this.balance) + "\n\n\n\n";
+          String printBalance = "\n\n\n\n\t\t\t  Your new balance is: $" + formatNumber(this.balance)
+              + "\n\n\n\n";
           printBankFrame(printBalance);
           wait(4000);
-          this.lastTransaction = "\n\t\t\t-- Credit Card Deposit: $" + amount + " -- %n%n";
+          this.lastTransaction = "Credit Card Deposit: $" + amount + "%n%n";
           menu();
         }
       } else {
@@ -369,7 +379,8 @@ public class CajeroAutomatico {
       clearConsole();
       System.out.printf("\n\n\n\n\t\t Invalid amount -- Try again \n");
       System.out.printf(" Please enter an amount specified up to two digits after the decimal point \n");
-      wait(3000);
+      wait(2000);
+      scDep.nextLine();
       creditCardDeposit(scDep);
     }
   }
@@ -397,10 +408,10 @@ public class CajeroAutomatico {
   private void checkLastTransaction() {
     clearConsole();
     String printLastTransaction = "\t ------------------  Check Last Transaction  ----------------- %n%n"
-        + "\n\n\t\t\t    Your last transaction is:"
+        + "\n\n\t\t\t    Your last transaction is: \n \t\t" + printDateTime() + " --> "
         + lastTransaction;
     printBankFrame(printLastTransaction);
-    wait(4000);
+    wait(5000);
     menu();
   }
 
@@ -408,8 +419,8 @@ public class CajeroAutomatico {
     clearConsole();
     String printGoodBye = "\t    ----------------------  Exit ATM  ---------------------- %n%n"
         + "\n\n\t\t    Thank you for trusting Generation Bank \n\t"
-        + "\t    ----------  Come back soon  ----------- \n\n\n"
-        + "\t\t    -----------  By: MarioROT  ------------";
+        + "\t     ----------  Come back soon  ----------- \n\n\n"
+        + "\t\t     -----------  By: MarioROT  ------------";
     printBankFrame(printGoodBye);
     System.exit(0);
   }
@@ -442,4 +453,9 @@ public class CajeroAutomatico {
     return NumberFormat.getIntegerInstance().format(num);
   }
 
+  public static String printDateTime() {
+    Date date = new Date();
+    String now = new SimpleDateFormat("yyyy/MM/dd  HH:mm").format(date);
+    return now;
+  }
 }
