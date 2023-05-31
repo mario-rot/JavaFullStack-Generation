@@ -1,0 +1,1 @@
+SELECT * FROM orders_has_products
