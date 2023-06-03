@@ -40,3 +40,5 @@ VALUES (11, 6, '2023-05-11', '2023-05-18', 6);
 
 INSERT INTO orders (order_id, customer_id, purchase_date, delivery_date, customer_customer_id)
 VALUES (12, 6, '2023-05-12', '2023-05-19', 6);
+
+SELECT * from orders;

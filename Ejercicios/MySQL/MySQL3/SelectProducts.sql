@@ -42,4 +42,42 @@ SELECT name, price, TRUNCATE(price*0.9,2) AS "precio HotSale 2023", TRUNCATE((pr
 -- POWER(2,8) 2 elevado a la potencia 8
 -- RAND() Genera un numero aleatorio entre 0 y 1.
 -- ROUND() Redondear hacia arriba si es >= 0.5
-SELECT ROUND(12.4) AS "Redondeo"
+SELECT ROUND(12.4) AS "Redondeo";
+
+SELECT * FROM products;
+SELECT 
+	SUM(price) AS "total"
+    FROM products
+    WHERE category_id = 2;
+
+SELECT AVG(price) FROM products
+	WHERE category_id = 2;
+
+-- ¿Qué productos son los más baratos?
+SELECT MIN(price) AS lowest_price
+	FROM products; -- 19.99
+
+SELECT MAX(price) AS lowest_price
+	FROM products; -- 249.99
+-- consultas anidadas    
+SELECT name, price
+	FROM products
+    WHERE price = ( SELECT MAX(price) FROM products  );
+    
+-- Mostrar los 3 elementos más baratos
+SELECT name, price
+	FROM products
+    ORDER BY price ASC LIMIT 3;
+-- Muestra el promedio de precio por categoría
+SELECT * FROM products;
+SELECT category_id , AVG(price) AS avg
+ FROM products 
+ WHERE category_id IS NOT NULL
+ GROUP BY category_id;
+
+-- Muestre las categorias que su promedio sea mayor a 90.00
+SELECT category_id , AVG(price) AS avg
+ FROM products 
+ WHERE category_id IS NOT NULL
+ GROUP BY category_id
+ HAVING avg > 90;

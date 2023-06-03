@@ -15,3 +15,5 @@ INSERT INTO products (name, description, price, category_id) VALUES ('Producto d
 INSERT INTO products (name, description, price, category_id) VALUES ('Producto de Viaje 2', 'Descripción del producto de viaje 2', 249.99, 5);
 INSERT INTO products (name, description, price, category_id) VALUES ('Producto Educativo 2', 'Descripción del producto educativo 2', 49.99, 6);
 INSERT INTO products (name, description, price, category_id) VALUES ('Producto de Arte y Cultura 2', 'Descripción del producto de arte y cultura 2', 99.99, 7);
+
+SELECT * FROM products;

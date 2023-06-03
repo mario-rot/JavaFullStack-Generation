@@ -16,14 +16,15 @@ VALUES("Abraham","Castillo", "Calle Hidalgo no.89", "abraham@gmail.com");
 -- Modificando Ids de 100->2, 101->3, 102->4
 UPDATE customer
    SET customer_id = CASE customer_id 
-                      WHEN 100 THEN 2 
-                      WHEN 101 THEN 3
-                      WHEN 102 THEN 4
-                      WHEN 103 then 5
-                      WHEN 104 then 6
+                      WHEN 105 THEN 7 
+                      WHEN 106 THEN 8
+                      WHEN 107 THEN 9
+                      WHEN 108 then 10
+                      WHEN 109 then 11
+                      WHEN 110 then 12
                       ELSE customer_id
                       END
- WHERE customer_id IN(100, 101,102,103,104); 
+ WHERE customer_id IN(105, 106,107,108,109, 110); 
 
 -- Insertando un registro, usando autoincrement, no agregar el customer_id
 INSERT INTO `ch26-ecommerce`.`customer`(`firstname`, `lastname`, `address`, `email`)

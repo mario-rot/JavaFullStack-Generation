@@ -18,12 +18,12 @@ SELECT DISTINCT product_id FROM orders_has_products;
 SELECT COUNT(DISTINCT product_id) AS "N. items vendidos"
  FROM orders_has_products;
  
-SELECT * FROM customers;
+SELECT * FROM customer;
 -- Obtener el numero de nombre distintos
 SELECT COUNT(DISTINCT firstname ) FROM customer;
 
 -- Limitar el numero de elementos consultados
-SELECT * FROM customers LIMIT 5;
+SELECT * FROM customer LIMIT 5;
 
 -- FILTRAR (WHERE) solo las personas con nombre alejandro
 SELECT * FROM customer WHERE firstname = "Alejandro";
