@@ -1,0 +1,10 @@
+{
+    "Topic1": {
+      "1": ["What is the capital of France?", ["Paris", "London", "Berlin", "Madrid"], [0], null],
+      "2": ["Which of the following are European countries?", ["France", "Japan", "Germany", "Italy"], [0, 2], null]
+    },
+    "Topic2": {
+      "1": ["What is the largest planet in our solar system?", ["Earth", "Mars", "Jupiter", "Venus"], [2], "https://jupyter.org/assets/share.png"],
+      "2": ["Select the planets in our solar system.", ["Mars", "Venus", "Jupiter", "Pluto"], [0, 2, 3], "solar_system.jpg"]
+    }
+}
