@@ -99,7 +99,8 @@ function showQuestion() {
             showQuestion();
         } else {
             // Quiz completed
-            alert('Quiz completed!');
+            //alert('Quiz completed!');
+            tempAlert('Quiz completed!',5000)
             resetQuiz();
         }
     }
@@ -110,7 +111,8 @@ function sendAnswer() {
     const selectedCheckboxes = document.querySelectorAll('input[name="option"]:checked');
     const allAnswers = questionsData[`Topic${currentTopic + 1}`][currentQuestion][1]; 
     const correctAnswers = questionsData[`Topic${currentTopic + 1}`][currentQuestion][2]; 
-    
+    const done = [];
+
     if (selectedCheckboxes.length > 0) {
         selectedCheckboxes.forEach((selectedCheckbox) => {
             
@@ -120,6 +122,19 @@ function sendAnswer() {
             if (correctAnswers.includes(selectedValue)) {
                 // Correct answer
                 selectedCheckbox.parentElement.style.backgroundColor = 'green';
+                // Highlight correct answer(s) in blue
+                done.push(selectedCheckbox.value)
+
+                correctAnswers.forEach((correctAnswer) => {
+                    const labels = document.querySelectorAll('.options label');
+                    console.log(allAnswers[correctAnswer])
+                    console.log(labels)
+                        labels.forEach((label) => {
+                            if (label.textContent.includes(allAnswers[correctAnswer]) && !done.includes(allAnswers[correctAnswer])) {
+                                label.style.backgroundColor = 'blue';
+                            }
+                        });
+                });
             } else {
                 // Incorrect answer
                 selectedCheckbox.parentElement.style.backgroundColor = 'red';
@@ -180,3 +195,22 @@ function resetQuiz() {
 }
 
 
+function myAlert(msg,title,width,height,timeout) {
+    var myWindow = window.open("", "",`width=${width},height=${height},left=${(window.outerWidth/2-width/2)},top=0`); //open a new popup at the top height and middle width of the current window
+    myWindow.document.write(`<center id="msg">`+msg+`</center>`); //write the message you want to display
+    myWindow.document.title = title; //write the title of the alert box
+    setTimeout(function(){
+        myWindow.close(); //close the popup
+    },timeout||3000) //in 3 secondes (3000 milliseconds)
+}
+
+function tempAlert(msg,duration)
+{
+ var el = document.createElement("div");
+ el.setAttribute("style","position:absolute;top:20%;left:40%;background-color:white;font-size:20px;");
+ el.innerHTML = msg;
+ setTimeout(function(){
+  el.parentNode.removeChild(el);
+ },duration);
+ document.body.appendChild(el);
+}
