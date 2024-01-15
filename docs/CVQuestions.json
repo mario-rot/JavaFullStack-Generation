@@ -1,0 +1,2847 @@
+{
+  "Filters & Edges": {
+    "1": [
+      "Test on smoothing filters: \"Values should be ...\"",
+      [
+        "Integers",
+        "Floats",
+        "Positives",
+        "Positives or negatives"
+      ],
+      [
+        2
+      ],
+      null
+    ],
+    "2": [
+      "Test on smoothing filters: \"Amount of smoothing ... to mask size\"",
+      [
+        "Grater than",
+        "Lower than",
+        "Proportional",
+        "Inversely proportional"
+      ],
+      [
+        2
+      ],
+      null
+    ],
+    "3": [
+      "Test on smoothing filters: \"Remove ...-frequency\" components; \"...-pass filter\". Complete the sentence",
+      [
+        "Low - High",
+        "High - Low",
+        "Middle - Band"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "4": [
+      "Test on derivatives: \"Sum to ... -> no response in constant regions\". Complete the sentence",
+      [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      [
+        2
+      ],
+      null
+    ],
+    "5": [
+      "Test on derivatives: \"... values at points of high contrast\". Complete the sentence",
+      [
+        "Large",
+        "Small",
+        "Positive",
+        "Negative"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "6": [
+      "Do you know any finite difference filters?",
+      [
+        "Roberts",
+        "Sobel",
+        "Prewitt",
+        "All the above",
+        "None of the above"
+      ],
+      [
+        4
+      ],
+      null
+    ],
+    "7": [
+      "How can we detect edges using derivatives",
+      [
+        "Edge correspond to extrema o derivative (max by absolute value)",
+        "Edges correspond to inflection points of derivative",
+        "Derivatives allow to allocate high image gradients",
+        "Derivatives allow to allocate low image gradients"
+      ],
+      [
+        1,
+        3
+      ],
+      null
+    ],
+    "8": [
+      "What is the effect of image noise for calculating edges? (multiple corect answer)",
+      [
+        "Image noise helps in locating edges.",
+        "Image noise prevents the proper localization of edges.",
+        "Image noise produces a high derivative filter response.",
+        "Image noise produces a low derivative filter response."
+      ],
+      [
+        2,
+        3
+      ],
+      null
+    ],
+    "9": [
+      "Why Deivative of Gaussian filter is useful?",
+      [
+        "Because it is the derivative of an edge detector",
+        "Because the derivative remove the noise from the image before applying an edge detector",
+        "Because the Gaussian filter remove the noise from the image before applying an edge detector.",
+        "Because it is the combination of two filters in a single one useful for edge detection"
+      ],
+      [
+        4
+      ],
+      null
+    ],
+    "10": [
+      "The effect of σ of the Gaussian filter on derivatives: \" Larger values: ……… scale edges detected. Smaller values: ………features detected.\" Select the option to complete the sentence.",
+      [
+        "Small - Large",
+        "Large - Small",
+        "Medium - Small"
+      ],
+      [
+        2
+      ],
+      null
+    ],
+    "11": [
+      "What is the primary goal of Computer Vision (CV)?",
+      [
+        "To discover what is present in an image scene.",
+        "To capture videos using a computer.",
+        "To convert images into audio.",
+        "To analyze text in images."
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "12": [
+      "Who linked a camera to a computer in 1966, and what was the objective of this connection?",
+      [
+        "Marvin Minsky linked a camera to a computer to play video games.",
+        "Marvin Minsky linked a camera to a computer to perform image recognition and describe what the camera saw.",
+        "Marvin Minsky linked a camera to a computer to create digital art.",
+        "Marvin Minsky linked a camera to a computer for surveillance purposes."
+      ],
+      [
+        2
+      ],
+      null
+    ],
+    "13": [
+      "What challenges and problems are faced in computer vision, making it a difficult field? (Select all that apply)",
+      [
+        "Variation of point of view",
+        "Illumination",
+        "Scale",
+        "Cluttered background",
+        "Movement",
+        "Occlusion",
+        "Intra-class variation",
+        "Ambiguity of implicit perception"
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      null
+    ],
+    "14": [
+      "What are some applications of Computer Vision? (Select all that apply)",
+      [
+        "Data extraction from images",
+        "Safety and autonomous driving",
+        "Cultural inheritance and restoration",
+        "Security and surveillance",
+        "Medical imaging and health",
+        "Entertainment and gaming"
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      null
+    ],
+    "15": [
+      "Who is credited with linking a camera to a computer in 1966, and why was this significant?",
+      [
+        "Marvin Minsky linked a camera to a computer to capture videos.",
+        "Marvin Minsky linked a camera to a computer to create digital art.",
+        "Marvin Minsky linked a camera to a computer to perform image recognition and describe what the camera saw.",
+        "Marvin Minsky linked a camera to a computer for surveillance purposes."
+      ],
+      [
+        2
+      ],
+      null
+    ],
+    "16": [
+      "What progress was made in computer vision in the 1970s?",
+      [
+        "Significant advancements in object recognition",
+        "Interpreting selected images, including object contours and labeling parts for segmentation",
+        "Breakthroughs in image registration techniques",
+        "The development of artificial neural networks"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "17": [
+      "In the 1980s, what trend emerged in computer vision, and what direction did the field take?",
+      [
+        "A shift toward statistical analysis and probabilistic methods",
+        "A focus on real-time video processing",
+        "The widespread adoption of artificial neural networks",
+        "A move toward object tracking and motion estimation"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "18": [
+      "What notable development occurred in computer vision in the 1990s, and what was the focus of that decade?",
+      [
+        "The advent of deep learning and convolutional neural networks",
+        "The emergence of face recognition technologies",
+        "The rise of virtual reality applications",
+        "The development of 3D graphics rendering techniques"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "19": [
+      "What are some key challenges faced by computer vision systems in interpreting images? (Select all that apply)",
+      [
+        "Variation in lighting conditions",
+        "Variation in object colors",
+        "Changes in image resolution",
+        "The presence of shadows",
+        "Inability to recognize 3D objects"
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      null
+    ],
+    "20": [
+      "What are some common applications of computer vision in today's world? (Select all that apply)",
+      [
+        "Autonomous vehicles",
+        "Medical image analysis",
+        "Weather forecasting",
+        "Voice recognition",
+        "Online shopping"
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      null
+    ],
+    "21": [
+      "What do digital cameras do with the information carried by light?",
+      [
+        "Convert it to a matrix of color intensities and brightness",
+        "Translate it into audible sounds",
+        "Transform it into 3D models",
+        "Print it as text"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "22": [
+      "What are some kinds of digital images? (Select all that apply)",
+      [
+        "Natural images",
+        "X-rays",
+        "MRI",
+        "Electron microscopy",
+        "Sound recordings"
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      null
+    ],
+    "23": [
+      "How many different pixel values can an 8-bit digital image have?",
+      [
+        "16",
+        "32",
+        "64",
+        "256"
+      ],
+      [
+        3
+      ],
+      null
+    ],
+    "24": [
+      "What is the process of quantization in digital images?",
+      [
+        "Converting continuous values to discrete integers",
+        "Converting text to images",
+        "Adding color to grayscale images",
+        "Compressing image files"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "25": [
+      "How is a colored image represented in digital form?",
+      [
+        "By filtering light in its three primary colors (Red, Green, Blue)",
+        "By converting it to grayscale",
+        "By using a single color channel",
+        "By using a single intensity value"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "26": [
+      "What does the term 'photometric resolution' in digital images refer to?",
+      [
+        "The number of different pixel values (intensity levels) on each color channel",
+        "The physical size of an image",
+        "The number of pixels in an image",
+        "The number of colors in an image"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "27": [
+      "What does a histogram of an image represent?",
+      [
+        "The frequencies of pixel intensities",
+        "The image's resolution",
+        "The color temperature",
+        "The image's brightness"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "28": [
+      "What color does a matrix of zeros create when used to represent an image?",
+      [
+        "Black",
+        "White",
+        "Red",
+        "Green"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "29": [
+      "In a uint8 image, how many different grey levels can be represented at most?",
+      [
+        "8",
+        "16",
+        "64",
+        "256"
+      ],
+      [
+        3
+      ],
+      null
+    ],
+    "30": [
+      "What is the purpose of contrast enhancement in image processing?",
+      [
+        "To increase the amount of values present in the image",
+        "To reduce the image size",
+        "To convert a color image to grayscale",
+        "To apply a Gaussian blur"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "31": [
+      "What is the impact of the 'sigma' value in a Gaussian filter for image processing?",
+      [
+        "It controls the distribution of values in the filter",
+        "It determines the image resolution",
+        "It changes the color balance",
+        "It has no effect on image filtering"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "31": [
+      "What is the goal of edge detection in image processing?",
+      [
+        "To map an image from 2D pixels to curves or line segments",
+        "To add color to grayscale images",
+        "To reduce image resolution",
+        "To increase image contrast"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "32": [
+      "What are some causes of edges in images? (Select all that apply)",
+      [
+        "Depth discontinuity",
+        "Change in surface orientation",
+        "Image rotation",
+        "Change in image brightness"
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      null
+    ],
+    "33": [
+      "What does an edge represent in an image?",
+      [
+        "A place of rapid change in intensity",
+        "A pixel with maximum brightness",
+        "A region of uniform color",
+        "A diagonal line"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "34": [
+      "What does the gradient of an image measure?",
+      [
+        "Changes in image intensity",
+        "Image resolution",
+        "Color balance",
+        "Texture"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "35": [
+      "What is the role of the 'sigma' parameter in edge detection using derivatives?",
+      [
+        "It influences the scale of detected edges",
+        "It determines the image size",
+        "It controls the color temperature",
+        "It has no effect on edge detection"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "36": [
+      "What is the first derivative used for in edge detection?",
+      [
+        "To measure changes in intensity along the X or Y axis",
+        "To calculate the image histogram",
+        "To apply a Gaussian filter",
+        "To increase image brightness"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "37": [
+      "What does the second derivative have in common with an edge in an image?",
+      [
+        "A zero-crossing",
+        "A maximum value",
+        "A uniform color",
+        "A diagonal orientation"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "38": [
+      "What does the term 'Laplacian of Gaussian (LoG)' refer to?",
+      [
+        "A filter for better edge identification",
+        "A type of image compression",
+        "A color space for images",
+        "A technique for increasing image resolution"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "39": [
+      "What does a larger sigma value in edge detection lead to?",
+      [
+        "Detection of large-scale edges",
+        "Detection of fine features",
+        "Reduced image contrast",
+        "Smaller image size"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "40": [
+      "What are the typical steps involved in edge detection? (Select all that apply)",
+      [
+        "Smoothing",
+        "Edge enhancement",
+        "Edge localization",
+        "Colorization"
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      null
+    ]
+  },
+  "Template Matching and HOG": {
+    "1": [
+      "What of the following cases is template matching better for?",
+      [
+        "Find lines in an image, including vertical, horizontal and diagonal lines",
+        "Find faces, some small and some large",
+        "Find icons in a computer screen",
+        "Find cracks and fissures in medical components"
+      ],
+      [
+        3
+      ],
+      null
+    ],
+    "2": [
+      "Test on template matching (multiple corect answer):",
+      [
+        "Match can be meaningful, if scale, orientation and general appearance is light",
+        "Match is meaningful only if we have the exact template present in the image",
+        "We use filters as responses to important edges in the image.",
+        "We use filters as templates of what we want to find in the image."
+      ],
+      [
+        0,
+        3
+      ],
+      null
+    ],
+    "3": [
+      "Nomalized cross-corelation is",
+      [
+        "Fast, but sensitive",
+        "More sensitive to illumination",
+        "Less sensitive to mask variance",
+        "More sensitive to mask values"
+      ],
+      [
+        2
+      ],
+      null
+    ],
+    "4": [
+      "What are some deformations pixel/patch based template matching can’t handle? (multiple corect answer):",
+      [
+        "Illumination change",
+        "Scale",
+        "Rotation",
+        "Shearing",
+        "Flipped",
+        "Contrast change",
+        "Translation"
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      null
+    ],
+    "5": [
+      "The gradient stucture is characteistic of",
+      [
+        "Local shape and appearance",
+        "Global shape and appearance",
+        "Disciminant objects",
+        "High-frequency features"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "6": [
+      "Illumination changes affects:",
+      [
+        "Gradient oientation",
+        "Gradient magnitude",
+        "Gradient histogram",
+        "Gradient computation"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "7": [
+      "HOG desciptor carries infomation about",
+      [
+        "the image illumination",
+        "the image scales",
+        "the edge positions",
+        "local image strengths"
+      ],
+      [
+        2
+      ],
+      null
+    ],
+    "8": [
+      "KNearest Neighbors for retieval: “The feature vector of an image is a point in our …. space. The query is … vector in our … space”. Complete with:",
+      [
+        "Feature - an unlabeled - feature",
+        "Feature - an unlabeled - feature",
+        "Search - a feature - search",
+        "Domain - a single - search"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "9": [
+      "Pedestian detection based on HOG applies:",
+      [
+        "Query and image global comparison",
+        "Filter based strategy to obtain responses",
+        "Sliding window strategy to extract and compare patches",
+        "Resize of the image to globally compare quey and image."
+      ],
+      [
+        2
+      ],
+      null
+    ],
+    "10": [
+      "What is the primary goal of template matching in image processing?",
+      [
+        "To find the template within the same image",
+        "To add filters to images",
+        "To increase image resolution",
+        "To extract features from images"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "11": [
+      "What is the main challenge in template matching?",
+      [
+        "Finding a good similarity measure",
+        "Selecting the right template size",
+        "Ensuring image color consistency",
+        "Handling 3D objects in images"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "12": [
+      "What is the method called 'Sum Square Difference' used for in template matching?",
+      [
+        "Comparing the template patches of the image",
+        "Smoothing the image",
+        "Detecting edges",
+        "Normalizing the image"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "13": [
+      "How does the 'Sum Square Difference' method handle local brightness changes?",
+      [
+        "It has problems with local brightness changes",
+        "It is unaffected by local brightness changes",
+        "It enhances local brightness changes",
+        "It smoothens local brightness changes"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "14": [
+      "What is the purpose of 'Convolutional filtering the image with the template' in template matching?",
+      [
+        "To find the template in the image with filter applied",
+        "To increase image resolution",
+        "To remove noise from the image",
+        "To apply a Gaussian filter"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "15": [
+      "What issue arises when using 'Convolutional filtering the image with the template' without normalization?",
+      [
+        "It doesn't work because it needs normalization",
+        "It enhances image details",
+        "It reduces image contrast",
+        "It increases image noise"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "16": [
+      "What does 'Method 3: Convolutional filtering the normalized image' in template matching include to compute the result?",
+      [
+        "Subtracting the mean value of the image",
+        "Adding the mean value of the image",
+        "Dividing the image by the template",
+        "Doubling the template size"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "17": [
+      "What is the technique known as 'Normalized Cross-Correlation' used for in template matching?",
+      [
+        "Comparing templates and images with varying brightness",
+        "Comparing templates and images with different resolutions",
+        "Finding the template with the highest resolution",
+        "Smoothing images"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "18": [
+      "Which similarity or distance measure is 'less sensitive to illumination' according to the summary of performance measures in template matching?",
+      [
+        "Correlation",
+        "Sum Square Difference",
+        "Zero-mean correlation",
+        "Normalized Cross correlation"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "19": [
+      "When does template matching typically fail to work well?",
+      [
+        "When there are variations in size or orientation of either the image or the template",
+        "When the image has too few pixels",
+        "When the image has too many colors",
+        "When the image is too bright"
+      ],
+      [
+        0
+      ],
+      null
+    ]
+  },
+  "SIFT": {
+    "1": [
+      "The key properties of a good local feature are:",
+      [
+        "Invariability to illumination changes, compactness and efficiency and globality",
+        "Repeatability, saliency, compactness and efficiency and locality",
+        "Indistinguishable, compactness and efficiency and locality",
+        "Saliency, densely located and locality"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "2": [
+      "The aperture problem appears when",
+      [
+        "There is no change along the edge direction",
+        "There is significant change in all directions",
+        "There is no change in all directions"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "3": [
+      "The distinctive image interest points are:",
+      [
+        "Texture-less regions",
+        "Flat regions",
+        "Edges",
+        "Corners"
+      ],
+      [
+        3
+      ],
+      null
+    ],
+    "4": [
+      "We can say that a point is located along an edge:",
+      [
+        "When both eigenvalues of M are 0",
+        "When both eigenvalues of M are large",
+        "When one eigenvalue of M is much larger than the other."
+      ],
+      [
+        2
+      ],
+      null
+    ],
+    "5": [
+      "Nearest neighbor distance ratio NNDR is used to",
+      [
+        "Robustly find good matchings and discard ambiguous ones",
+        "Robustly find nearest neighbors",
+        "Robustly rank matching of local features.",
+        "Compare Euclidean distances for ranking matches"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "6": [
+      "RANSAC algorithm allows to",
+      [
+        "Find a set of inliers and a transformation model",
+        "Find a set of good correspondences and a transformation model",
+        "Find a set of random samples to evaluate the inliers",
+        "Refine a previously computed model based on outliers"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "7": [
+      "The original SIFT descriptor uses 16x16 patches and 4x4 array of 8 bin histograms. Thus, each SIFT descriptor is made up of:",
+      [
+        "16 non-negative numbers",
+        "4 × 4 × 8 = 128 non-negative numbers",
+        "4 × 4 × 16 = 256 non-negative numbers",
+        "16 × 16 x 4 = 1024 non-negative numbers",
+        "16 x 16 × 8 = 2048 non-negative numbers"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "8": [
+      "Which are the differences and similarities between HOG and SIFT descriptors? (multiple corect answer).",
+      [
+        "SIFT is local descriptor and HOG is a global descriptor",
+        "SIFT detects interest points and HOG is a local descriptor",
+        "SIFT and HOG are used for matching interest points among images",
+        "SIFT is used for finding point correspondence between images whereas HOG is used for template matching"
+      ],
+      [
+        0,
+        3
+      ],
+      null
+    ],
+    "9": [
+      "What are the three main components of local features in object recognition?",
+      [
+        "Detection, Description, Matching",
+        "Saliency, Compactness, Locality",
+        "Extraction, Analysis, Verification",
+        "Classification, Segmentation, Clustering"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "10": [
+      "What are the desired properties of local features in object recognition?",
+      [
+        "Repeatability/Precision, Saliency, Compactness and efficiency, Locality",
+        "Colorfulness, Texture, Brightness, Shape",
+        "Scale invariance, Rotation invariance, Illumination invariance, Noise reduction",
+        "Object recognition, Image classification, Image retrieval, Semantic segmentation"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "11": [
+      "What is the purpose of local invariant features in object recognition?",
+      [
+        "To determine correspondence between descriptors in two views",
+        "To make images brighter",
+        "To remove noise from images",
+        "To create a pyramid of scales"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "12": [
+      "What is the Harris Corners method used for in object recognition?",
+      [
+        "Identifying distinctive image interest points",
+        "Increasing image resolution",
+        "Performing image classification",
+        "Detecting image edges"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "13": [
+      "How is automatic scale selection achieved in object recognition?",
+      [
+        "By finding local maxima of the cornerness function in both position and scale",
+        "By computing the eigenvalues of images",
+        "By applying Gaussian filters to images",
+        "By rotating the image patches"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "14": [
+      "What is the purpose of rotation and illumination invariance in feature descriptors?",
+      [
+        "To make the descriptors robust to changes in rotation and lighting",
+        "To increase computational complexity",
+        "To reduce image contrast",
+        "To apply a Gaussian filter"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "15": [
+      "What method is used to add robustness to feature matching in object recognition?",
+      [
+        "Nearest neighbor distance ratio (NNDR)",
+        "Mean squared error (MSE)",
+        "Principal component analysis (PCA)",
+        "Convolutional neural networks (CNNs)"
+      ],
+      [
+        0
+      ],
+      null
+    ]
+  },
+  "Face Detection & Recognition": {
+    "1": [
+      "The objectives of Viola & Jones method are:",
+      [
+        "Fast algorithm (real-time) for accurate recognition of faces",
+        "Fast algorithm (real-time) for accurate detection of faces",
+        "Fast algorithm (real-time) for accurate recognition of sliding windows",
+        "Fast algorithm (real-time) for accurate detection of sliding windows"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "2": [
+      "Rectangle features are:",
+      [
+        "Haar-like features to detect eye structures",
+        "Haar-like features to detect low scale contours",
+        "Haar-like features to detect center-surround structures",
+        "Haar-like features to detect edges, lines, center-surround structures"
+      ],
+      [
+        3
+      ],
+      null
+    ],
+    "3": [
+      "Integral Image",
+      [
+        "Is intended to efficiently compute rectangle sums",
+        "Enables to evaluate rectangle features of a fixed size in constant time",
+        "Is the result of the integral of the original image",
+        "Is the result of computing rectangle features from the original image"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "4": [
+      "AdaBoost (multiple corect answer):",
+      [
+        "Builds a strong classifier called a decision stumps in every iteration",
+        "Combines several weak classifiers to build a single strong classifier",
+        "Simultaneously performs feature extraction and classification",
+        "Defines weak classifiers in each iteration to be devoted to misclassified examples",
+        "Uses weak classifiers which find the weak hypothesis that maximizes the weighted error"
+      ],
+      [
+        1,
+        3
+      ],
+      null
+    ],
+    "5": [
+      "Cascade of classifiers is a",
+      [
+        "Method used for windowing.",
+        "Method used in the AdaBoost classifier.",
+        "Method to speed-up the detection process.",
+        "Method used to remove positive samples from the training set."
+      ],
+      [
+        2
+      ],
+      null
+    ],
+    "6": [
+      "Indicates which of these sentences are true (multiple correct answer)",
+      [
+        "The Eigenfaces are a set of basis faces which best represent the differences between the training faces.",
+        "We transform an image of a face into a vector of basis.",
+        "The statistical criterion for measuring the notion behind Eigenfaces is: best representation of the differences between the training faces.",
+        "Eigenfaces is based on a nonlinear transformation of the data into a lower dimensional space",
+        "We can store each face as a set of weights for the previously computed basis faces."
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      null
+    ],
+    "7": [
+      "Eigenfaces is based on:",
+      [
+        "LDA",
+        "PCA",
+        "LDA and PCA",
+        "None of these methods"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "8": [
+      "LDA is a:",
+      [
+        "Unsupervised method",
+        "Supervised method",
+        "Semi-supervised method"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "9": [
+      "PCA is a:",
+      [
+        "Unsupervised method",
+        "Supervised method",
+        "Semi-supervised method"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "10": [
+      "Is LDA always better than PCA for face recognition?",
+      [
+        "Yes",
+        "No"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "11": [
+      "What is the goal of face detection in computer vision?",
+      [
+        "To identify and locate human faces in an image regardless of their properties",
+        "To classify images into different categories",
+        "To enhance the resolution of images",
+        "To recognize text in images"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "12": [
+      "What is the primary challenge in face detection for computers?",
+      [
+        "Detecting faces under various conditions such as scale, orientation, and illumination",
+        "Detecting facial emotions",
+        "Detecting faces in black and white images",
+        "Detecting faces in videos only"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "13": [
+      "What are the two main tasks in face detection and recognition?",
+      [
+        "Face detection and face recognition",
+        "Object detection and image segmentation",
+        "Feature extraction and pattern recognition",
+        "Image classification and image retrieval"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "14": [
+      "What is the regular strategy used for face detection?",
+      [
+        "Sliding window technique",
+        "Random sampling",
+        "Edge detection",
+        "Color transformation"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "15": [
+      "Why is the sliding window technique not efficient for face detection?",
+      [
+        "It creates a large number of regions to analyze, including more non-face regions than face regions",
+        "It requires extensive computational resources",
+        "It is sensitive to noise in images",
+        "It is not suitable for real-time processing"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "16": [
+      "What are some concepts associated with the Viola & Jones method for face detection?",
+      [
+        "Rectangular features (Haar-like features), Integral images, AdaBoost, Cascade of classifiers",
+        "SIFT, HOG, ORB, PCA",
+        "Template matching, Sobel operator, CNN, RANSAC",
+        "Histogram of gradients, Laplacian of Gaussian, Harris corners, k-means clustering"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "17": [
+      "What is the purpose of integral images in the Viola & Jones method?",
+      [
+        "To compute rectangle features in a fast and efficient way",
+        "To generate random samples for feature extraction",
+        "To perform edge detection in images",
+        "To classify faces using neural networks"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "18": [
+      "What is the primary goal of the face recognition process?",
+      [
+        "To identify and locate human faces in images",
+        "To reduce the dimensionality of data",
+        "To classify images into different categories",
+        "To enhance the resolution of facial images"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "19": [
+      "What is dimensionality reduction in the context of face recognition?",
+      [
+        "Transforming high-dimensional data into lower-dimensional data that is informative and non-redundant",
+        "Enhancing the resolution of facial images",
+        "Increasing the number of features in data",
+        "Removing all features from data"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "20": [
+      "What are some examples of linear transformations used in dimensionality reduction?",
+      [
+        "PCA (Principal Component Analysis) and LDA (Linear Discriminant Analysis)",
+        "Eigenfaces and Fisherfaces",
+        "Non-linear transformations and linear discriminants",
+        "Facial feature extraction and pattern recognition"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "21": [
+      "What is the purpose of PCA (Principal Component Analysis) in face recognition?",
+      [
+        "To reduce data dimensionality while retaining as much variation as possible",
+        "To increase the dimensionality of data",
+        "To create new features from data",
+        "To perform non-linear transformations on data"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "22": [
+      "How is the proportion of variance (PoV) used in PCA to determine the number of principal components (k) to retain?",
+      [
+        "To choose k such that it explains a significant portion of the accumulated variance (e.g., 90%)",
+        "To choose k based on the number of training images",
+        "To select k randomly",
+        "To choose k based on the largest eigenvalue"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "23": [
+      "What are Eigenfaces in face recognition?",
+      [
+        "Eigenfaces represent a weighted combination of basis faces used to represent any face",
+        "Eigenfaces are a set of faces with varying orientations",
+        "Eigenfaces are the result of linear discriminant analysis",
+        "Eigenfaces are non-linear transformations of facial images"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "24": [
+      "Why might PCA be preferred over LDA in certain situations?",
+      [
+        "When the training set is small, PCA can outperform LDA",
+        "When the training set is large and representative for each class, LDA outperforms PCA",
+        "PCA and LDA perform equally well in all situations",
+        "PCA is always preferred over LDA"
+      ],
+      [
+        0
+      ],
+      null
+    ]
+  },
+  "Object Recognition by Bag of Words": {
+    "1": [
+      "*IDEA*: describe objects as bag-of-words, would it work?",
+      [
+        "Yes",
+        "No"
+      ],
+      [
+        0
+      ],
+      "Pasted image 20240113000435.png"
+    ],
+    "2": [
+      "What is the process for extracting features in bag of words?",
+      [
+        "Detect points of interests or just regular points over the image (grid)",
+        "Using SIFT to detect keypoints or a pyramid histogram of visual words (PHOW)",
+        "Dense SIFT: extract all points detected",
+        "PHOW features - large speed-up due to the uniform scale and sampling!"
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      "Pasted image 20240113000509.png"
+    ],
+    "3": [
+      "What is the purpose of learning a dictionary in bag of words?",
+      [
+        "Frequency of similar features in our bag"
+      ],
+      [
+        0
+      ],
+      "Pasted image 20240113000601.png"
+    ],
+    "4": [
+      "How are image representations created in bag of words?",
+      [
+        "Quantize features using visual vocabulary and represent images by frequencies of “visual words”"
+      ],
+      [
+        0
+      ],
+      "Pasted image 20240113000337.png"
+    ],
+    "5": [
+      "What is the significance of spatial histograms per zone in bag of words?",
+      [
+        "Construct the histogram trying to keep spatial information from the image, saving patches encoding more than just features"
+      ],
+      [
+        0
+      ],
+      "Pasted image 20240113003014.png"
+    ],
+    "6": [
+      "What is the main advantage of using a kernel function in Support Vector Machine (SVM)?",
+      [
+        "Allows SVMs to handle nonlinearly separable data sets",
+        "Incorporate prior knowledge",
+        "Can be defined on inputs that are not vectors (such as strings, graphs...)",
+        "Provides a mathematical formalism for combining different types of data (critical in biological applications)"
+      ],
+      [
+        0
+      ],
+      "Pasted image 20240113010036.png"
+    ],
+    "7": [
+      "What is the role of Precision and Recall in evaluation?",
+      [
+        "Precision: fraction of retrieved objects that are relevant = P(relevant|retrieved)",
+        "Recall: fraction of relevant objects that are retrieved = P(retrieved|relevant)"
+      ],
+      [
+        0,
+        1
+      ],
+      null
+    ],
+    "8": [
+      "How is the choice of a kernel function typically determined in SVM?",
+      [
+        "The only realistic answer is trial and error",
+        "Typically, begin with a simple SVM, and then experiment with a variety of ‘standard’ kernel functions"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "9": [
+      "In bag of words, what does the term 'quantizing with the codebook' refer to?",
+      [
+        "Encoding the descriptors obtained from the image",
+        "Comparing the encodings with the codewords in the visual dictionary",
+        "Mapping feature vectors to the nearest codevector in a codebook"
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      null
+    ],
+    "10": [
+      "What are the potential issues with choosing a vocabulary size that is too small in bag of words?",
+      [
+        "Visual words may not be representative of all patches",
+        "Loss of important image information",
+        "Decreased accuracy in image representation"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "11": [
+      "What is the role of a kernel in the context of Support Vector Machine (SVM)?",
+      [
+        "To map data from its original feature space to another dimensional space where it is linearly separable",
+        "To determine the margin between positive and negative examples",
+        "To perform clustering on input data"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "12": [
+      "What is the primary advantage of the one-versus-all strategy in multi-class classification?",
+      [
+        "The classifier with the highest output function assigns the class, ensuring continuous decision values",
+        "It isolates one specific class for classification at a time",
+        "It reduces computational complexity in multi-class scenarios"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "13": [
+      "In SVMs for image classification, what are the typical steps involved in the process?",
+      [
+        "Pick an image representation",
+        "Pick a kernel function for that representation",
+        "Compute the matrix of kernel values between every pair of training examples",
+        "Feed the kernel matrix into your favorite SVM solver to obtain support vectors and weights",
+        "Compute kernel values for your test example and each support vector to get the decision function value"
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      null
+    ],
+    "14": [
+      "What is the purpose of using Lagrangian multipliers in SVM?",
+      [
+        "To find the minimum of a convex function with linear constraints",
+        "To determine the optimal kernel function for SVM",
+        "To perform dimensionality reduction on input data"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "15": [
+      "What is the significance of support vectors in SVM?",
+      [
+        "Support vectors are important for prediction of future points",
+        "Support vectors are used to compute the kernel matrix",
+        "Support vectors are chosen randomly from the training set"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "16": [
+      "In bag of words, what happens if the vocabulary size is too large?",
+      [
+        "Quantization artifacts may occur, leading to overfitting",
+        "Visual words may become too sparse",
+        "Computational complexity increases significantly"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "17": [
+      "How is the choice of a kernel function in SVM typically determined?",
+      [
+        "Through trial and error",
+        "By selecting the most complex kernel function available",
+        "By using the default kernel function provided by SVM libraries"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "18": [
+      "What is the main benefit of using the one-versus-one strategy in multi-class classification?",
+      [
+        "Max-wins voting strategy allows every classifier to contribute to the final decision",
+        "It simplifies the classification process by isolating one specific class at a time",
+        "It reduces the number of classifiers needed in comparison to one-versus-all"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "19": [
+      "How can kernel functions benefit SVMs in handling data?",
+      [
+        "They allow SVMs to handle nonlinearly separable data sets",
+        "They provide a mathematical formalism for combining different types of data",
+        "They simplify the process of training SVMs"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "20": [
+      "What is the main advantage of using precision and recall for evaluation?",
+      [
+        "They provide a balanced measure of classification performance",
+        "They focus on the correct classification of positive examples",
+        "They are easy to compute and interpret"
+      ],
+      [
+        0
+      ],
+      null
+    ]
+  },
+  "Convolutional Neural Network": {
+    "1": [
+      "What are the related fields to the topic of Convolutional Neural Networks?",
+      [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Deep Learning",
+        "Data Science",
+        "Others"
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      null
+    ],
+    "2": [
+      "In which learning paradigms are Convolutional Neural Networks (CNNs) commonly used?",
+      [
+        "Supervised",
+        "Unsupervised",
+        "Reinforcement",
+        "All of the above"
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      null
+    ],
+    "3": [
+      "What important factors contribute to the success of several Computer Vision (CV) tasks?",
+      [
+        "Data",
+        "Computation resources",
+        "Models",
+        "All of the above"
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      null
+    ],
+    "4": [
+      "What is the primary goal of a Convolutional Neural Network (CNN) in a classification task?",
+      [
+        "To find a hyperplane to separate classes",
+        "To perform unsupervised learning",
+        "To compute gradients efficiently"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "5": [
+      "Which layer in a CNN is responsible for feature extraction from images?",
+      [
+        "Convolutional layers",
+        "Pooling layers",
+        "Non-linear activation layers",
+        "Fully connected layers (FC)"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "6": [
+      "What are the matrices used as weights in CNNs called?",
+      [
+        "Convolutional filters",
+        "Pooling matrices",
+        "Activation matrices",
+        "Fully connected weights"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "7": [
+      "Which famous challenge showcased the potential of CNNs in computer vision?",
+      [
+        "IMAGENET",
+        "COCO",
+        "PASCAL VOC",
+        "OpenAI Gym"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "8": [
+      "What loss function is commonly used for multi-label classification in CNNs?",
+      [
+        "Binary Cross-Entropy",
+        "Categorical Cross-Entropy",
+        "Mean Squared Error",
+        "Kullback-Leibler Divergence"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "9": [
+      "Which optimization algorithm is widely used in training CNNs?",
+      [
+        "Gradient Descent",
+        "K-Means",
+        "Random Forest",
+        "Support Vector Machine"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "10": [
+      "What is the primary goal of optimization in CNNs?",
+      [
+        "To reach the global maxima in parameter space",
+        "To minimize the number of layers in the network",
+        "To increase computational complexity"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "11": [
+      "How can overfitting in CNNs be reduced?",
+      [
+        "Reduce the number of parameters",
+        "Introduce weight decay",
+        "Use more convolutional layers",
+        "Increase the learning rate"
+      ],
+      [
+        0,
+        1
+      ],
+      null
+    ],
+    "12": [
+      "What is the concept of 'Transfer Learning' in CNNs?",
+      [
+        "Reusing pre-trained models and learned features for similar tasks",
+        "Transferring data between GPUs",
+        "Learning to transfer weights in the network",
+        "Transfering labeled data to another dataset"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "13": [
+      "What is 'Meta-Learning' in CNNs primarily focused on?",
+      [
+        "Teaching models how to learn efficiently",
+        "Learning from noisy data",
+        "Adapting to new tasks rapidly",
+        "Using multiple GPUs for training"
+      ],
+      [
+        0,
+        2
+      ],
+      null
+    ],
+    "14": [
+      "What is 'Explainable AI (XAI)' in CNNs primarily concerned with?",
+      [
+        "Understanding and interpreting deep learning models",
+        "Optimizing computational efficiency",
+        "Creating large-scale datasets",
+        "Visualizing network architectures"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "15": [
+      "What is the approach of 'Federated Learning' in CNNs?",
+      [
+        "Training models across decentralized data sources without sharing raw data",
+        "Sharing raw data across all devices for training",
+        "Using distributed computing clusters for model training",
+        "Applying transfer learning techniques"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "16": [
+      "In which field was deep learning increasingly applied, including medical image analysis?",
+      [
+        "Healthcare",
+        "Finance",
+        "Retail",
+        "Gaming"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "17": [
+      "What are the key components of a Convolutional Neural Network (CNN)?",
+      [
+        "Convolutional layers",
+        "Pooling layers",
+        "Non-linear activation layers",
+        "All of the above"
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      null
+    ],
+    "18": [
+      "What is the primary responsibility of a convolutional layer in a CNN?",
+      [
+        "Feature extraction from images",
+        "Dimensionality reduction",
+        "Non-linear transformation",
+        "Fully connected classification"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "19": [
+      "What are the benefits of using convolutional filters learned in one task for another similar task?",
+      [
+        "Reduction in computational cost",
+        "Faster model training",
+        "Transfer learning",
+        "All of the above"
+      ],
+      [
+        0,
+        2
+      ],
+      null
+    ],
+    "20": [
+      "What is the primary goal of the activation functions used in CNNs?",
+      [
+        "To introduce non-linearity to the response of the layer",
+        "To reduce computational complexity",
+        "To increase the number of parameters",
+        "To speed up training"
+      ],
+      [
+        0
+      ],
+      null
+    ]
+  },
+  "Explainability AI": {
+    "1": [
+      "Why is visualization important in data analysis?",
+      [
+        "To see how mixed/separated data is",
+        "To observe relationships in data",
+        "To reduce computational complexity",
+        "All of the above"
+      ],
+      [
+        0,
+        1
+      ],
+      null
+    ],
+    "2": [
+      "What is the primary goal of Principal Component Analysis (PCA)?",
+      [
+        "To find a smaller number of dimensions retaining most useful information",
+        "To increase the number of dimensions for better data representation",
+        "To perform unsupervised learning",
+        "To create high-dimensional representations"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "3": [
+      "What are 'Principal Components' (PCs) in PCA?",
+      [
+        "Orthogonal directions accounting for most variance",
+        "Synthetic data points created from eigenvalues",
+        "Activation functions in neural networks",
+        "Filters in convolutional layers"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "4": [
+      "What is the primary advantage of using t-SNE for data visualization?",
+      [
+        "Non-linear scaling for optimal separation",
+        "Efficient execution time of algorithms",
+        "Assuming linear decomposition of data",
+        "Creating noise in the data"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "5": [
+      "What does 'Perplexity' refer to in t-SNE?",
+      [
+        "Expected number of neighbors within a cluster",
+        "Variance of data",
+        "Learning rate in optimization",
+        "Number of dimensions in the data"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "6": [
+      "What is the purpose of 'UMAP' in data visualization?",
+      [
+        "Combining the strengths of PCA and t-SNE",
+        "Increasing computational complexity",
+        "Creating high-dimensional graphs",
+        "Using random noise in data"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "7": [
+      "Why is choosing the radius critical in constructing a fuzzy simplicial complex in UMAP?",
+      [
+        "It affects cluster sizes and connectivity",
+        "It reduces computational cost",
+        "It makes the data more linear",
+        "It improves noise reduction"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "8": [
+      "What is 'Class Activation Maximization' (CAM) used for in CNN interpretation?",
+      [
+        "Explaining CNN decisions by visualizing feature maps",
+        "Transforming data into high dimensions",
+        "Creating noisy data",
+        "Enhancing model accuracy"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "9": [
+      "What is the role of 'Global Average Pooling (GAP)' in CAM?",
+      [
+        "Averaging feature map activations",
+        "Increasing model complexity",
+        "Transforming data into the frequency domain",
+        "Creating noisy images"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "10": [
+      "What is 'Grad-CAM' and how is it related to CAM?",
+      [
+        "A versatile version of CAM for any CNN",
+        "A method to invert CNN operations",
+        "A type of pooling layer",
+        "A tool for image denoising"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "11": [
+      "Why is 'Interpretability' important in machine learning models?",
+      [
+        "To establish cause and effect relationships",
+        "To increase computational complexity",
+        "To improve data visualization",
+        "To optimize productivity"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "12": [
+      "What is the difference between 'Interpretability' and 'Explainability'?",
+      [
+        "Interpretability establishes cause and effect, while explainability explains internal mechanisms",
+        "Interpretability explains internal mechanisms, while explainability establishes cause and effect",
+        "Both terms have the same meaning",
+        "Neither term is used in machine learning"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "13": [
+      "How can interpretability techniques help in feature engineering?",
+      [
+        "By informing the creation of new features and transformations",
+        "By increasing model complexity",
+        "By using noisy data for feature engineering",
+        "By reducing the number of features"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "14": [
+      "What are some potential challenges in making hiring decisions using machine learning algorithms?",
+      [
+        "Optimizing productivity, ethics, and legality simultaneously",
+        "Using machine learning without any challenges",
+        "Avoiding fairness and safety concerns",
+        "Using black-box models exclusively"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "15": [
+      "What is the primary concern of 'Fairness' in interpretability techniques?",
+      [
+        "Assessing whether decisions conform to ethical standards",
+        "Optimizing model accuracy",
+        "Creating noisy data",
+        "Using only natural language explanations"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "16": [
+      "What is the primary advantage of 'Decomposability' in interpretability techniques?",
+      [
+        "Addressing what the model is doing at each stage",
+        "Minimizing the number of dimensions",
+        "Increasing model complexity",
+        "Optimizing algorithmic transparency"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "17": [
+      "What are some examples of 'Post hoc interpretability' techniques?",
+      [
+        "Natural language explanations",
+        "Visualizations of learned representations",
+        "Explaining algorithms through code",
+        "Adding more convolutional layers"
+      ],
+      [
+        0,
+        1
+      ],
+      null
+    ],
+    "18": [
+      "What does 'Guided Grad-CAM' add to the Grad-CAM technique?",
+      [
+        "Element-wise multiplication of guided-backpropagation visualization",
+        "Random noise in the data",
+        "Extra convolutional layers",
+        "Higher learning rates"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "19": [
+      "Why is 'Safety' important in interpretability?",
+      [
+        "Ensuring the system makes safe decisions",
+        "Increasing model complexity",
+        "Using only linear transformations",
+        "Avoiding noisy data"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "20": [
+      "What is the primary role of 'Pos hoc interpretability' techniques?",
+      [
+        "Providing explanations after the model has made predictions",
+        "Enhancing model training speed",
+        "Creating noisy data",
+        "Replacing natural language explanations"
+      ],
+      [
+        0
+      ],
+      null
+    ]
+  },
+  "Object Detection": {
+    "1": [
+      "What have been the focus of recent computer vision (CV) research in recent years?",
+      [
+        "Object detection",
+        "Semantic segmentation",
+        "Image classification",
+        "Image generation"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "2": [
+      "What is the primary task involved in 'Object Detection'?",
+      [
+        "Identification of object classes",
+        "Image generation",
+        "Semantic segmentation",
+        "Feature extraction"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "3": [
+      "How is the spatial localization of objects typically represented in 'Object Detection'?",
+      [
+        "Using bounding boxes",
+        "Using pixel-wise masks",
+        "Using keypoints",
+        "Using feature vectors"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "4": [
+      "What is the common approach for solving the 'Object Detection' problem?",
+      [
+        "Using a CNN with Fully Connected Layers",
+        "Using a fully connected neural network",
+        "Using a decision tree",
+        "Using k-means clustering"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "5": [
+      "In object detection, what does '4 + c + 1' refer to in the label?",
+      [
+        "The number of bounding box coordinates and classes",
+        "The number of convolutional layers in the network",
+        "The number of anchor boxes",
+        "The number of data augmentation techniques"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "6": [
+      "What is the purpose of the 'anchor box' approach in object detection?",
+      [
+        "To recognize multiple objects of the same category or different categories",
+        "To improve selective search",
+        "To eliminate bounding boxes",
+        "To reduce the dimensionality of the data"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "7": [
+      "What is the purpose of 'non-max suppression' in object detection?",
+      [
+        "To select the best predictions among multiple detections",
+        "To generate anchor boxes",
+        "To improve data augmentation",
+        "To compute the intersection over union"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "8": [
+      "What are some popular datasets used for training object detection models?",
+      [
+        "MS Coco, PASCAL VOC, and others",
+        "ImageNet and CIFAR-10",
+        "MNIST and Fashion MNIST",
+        "CelebA and LFW"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "9": [
+      "What does 'R-CNN' stand for in the context of object detection?",
+      [
+        "Region-based Convolutional Neural Network",
+        "Randomized Convolutional Network",
+        "Regression-based Convolutional Neural Network",
+        "Radical Convolutional Neural Network"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "10": [
+      "What is the primary disadvantage of 'R-CNN'?",
+      [
+        "Huge amount of time required for training and prediction",
+        "Inability to handle multiple object categories",
+        "Lack of convolutional layers in the network",
+        "Limited class prediction capabilities"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "11": [
+      "How does 'Fast R-CNN' improve over the original 'R-CNN'?",
+      [
+        "It shares computation processes for region proposals",
+        "It introduces more convolutional layers",
+        "It uses a different loss function",
+        "It eliminates the need for selective search"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "12": [
+      "What is the primary benefit of using 'Faster R-CNN' over 'R-CNN'?",
+      [
+        "It eliminates the need for selective search",
+        "It is 10 times faster in training and testing",
+        "It has a simpler architecture",
+        "It does not require any loss functions"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "13": [
+      "What is the primary difference between 'YOLO' and other object detection methods?",
+      [
+        "YOLO performs object detection as a regression problem without proposals",
+        "YOLO uses anchor boxes for multiple object categories",
+        "YOLO relies on selective search for region proposals",
+        "YOLO uses a separate network for bounding box prediction"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "14": [
+      "What does 'YOLO' stand for in the context of object detection?",
+      [
+        "You Only Look Once",
+        "Your Object Localization Output",
+        "Yielding Outstanding Localization Outcomes",
+        "Yielding Object Learning Opportunities"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "15": [
+      "How does 'SSD' differ from 'YOLO' in terms of approach?",
+      [
+        "SSD also uses anchor boxes but predicts detections at multiple scales",
+        "SSD uses a region proposal network (RPN) for bounding box predictions",
+        "SSD relies on selective search for object localization",
+        "SSD performs object detection as a classification problem"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "16": [
+      "What is 'Intersection over Union (IoU)' used for in object detection evaluation?",
+      [
+        "To measure the quality of localization estimations versus ground truth",
+        "To select anchor boxes",
+        "To define anchor box sizes",
+        "To compute bounding box regression"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "17": [
+      "What does 'Mean Average Precision (mAP)' measure in object detection evaluation?",
+      [
+        "The overall quality of object detection across multiple classes",
+        "The precision and recall of a single object class",
+        "The speed of object detection algorithms",
+        "The number of object categories in a dataset"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "18": [
+      "How does 'mAP' take into account performance at different IoU thresholds?",
+      [
+        "By calculating average precision for each class across various IoU thresholds",
+        "By selecting the best IoU threshold for all classes",
+        "By using a fixed IoU threshold for all classes",
+        "By averaging precision and recall values at all thresholds"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "19": [
+      "What is the primary advantage of 'Hard Negative Mining' in object detection training?",
+      [
+        "It addresses the imbalance issue between negative and positive predictions",
+        "It eliminates negative predictions entirely",
+        "It speeds up the training process",
+        "It reduces the size of anchor boxes"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "20": [
+      "Why does 'SSD' use a matching strategy for assigning ground truth information to default boxes?",
+      [
+        "To determine which default boxes correspond to ground truth detections",
+        "To reduce the number of default boxes",
+        "To eliminate the need for anchor boxes",
+        "To improve the speed of object detection"
+      ],
+      [
+        0
+      ],
+      null
+    ]
+  },
+  "Transformers": {
+    "1": [
+      "What is the primary goal when working with artificial neural networks (ANN) and convolutional neural networks (CNN) in terms of their output?",
+      [
+        "To obtain predictions as well as understand the decision-making process",
+        "To achieve the highest accuracy possible",
+        "To reduce the complexity of the network",
+        "To optimize the activation functions"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "2": [
+      "How do humans typically focus their attention to make decisions?",
+      [
+        "By emphasizing important information and discarding non-relevant information",
+        "By considering all available information equally",
+        "By using selective search to find relevant information",
+        "By using random processes to make decisions"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "3": [
+      "What is the role of the attention mechanism in neural networks?",
+      [
+        "To emphasize important parts of the information and de-emphasize non-relevant parts",
+        "To increase the network's capacity",
+        "To speed up the training process",
+        "To reduce the amount of training data required"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "4": [
+      "Why is the attention mechanism in deep learning considered a 'vector of importance weights'?",
+      [
+        "Because it assigns weights to different parts of the input data based on their relevance",
+        "Because it reduces the dimensionality of the data",
+        "Because it eliminates the need for convolutional layers",
+        "Because it controls the learning rate of the network"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "5": [
+      "In the context of images, how does the attention vector help deep learning models?",
+      [
+        "By allowing models to focus on important parts of the image",
+        "By eliminating the need for convolutional layers",
+        "By reducing the resolution of the image",
+        "By simplifying the architecture of the model"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "6": [
+      "Why is it important to have a trainable attention mechanism in computer vision models?",
+      [
+        "To adapt and learn from different image features and patterns",
+        "To avoid using convolutional layers",
+        "To speed up the inference process",
+        "To simplify the model architecture"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "7": [
+      "In the context of 'VGG-16 with attention,' where are attention modules applied?",
+      [
+        "After pool3 and pool5 layers",
+        "Before the input layer",
+        "Between fully connected layers",
+        "After the output layer"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "8": [
+      "Why are intermediate feature maps from pool-3 and pool-4 used to infer attention maps in 'VGG-16 with attention'?",
+      [
+        "To extract attention information from different stages of processing",
+        "To reduce the overall number of layers in the network",
+        "To speed up the training process",
+        "To improve the quality of predictions"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "9": [
+      "What is the role of the 'attention layer' in 'VGG-16 with attention'?",
+      [
+        "To compute the attention map and the new feature vector",
+        "To perform image classification",
+        "To reduce the resolution of the input image",
+        "To increase the number of convolutional layers"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "10": [
+      "What does 'self-attention' mean in the context of neural networks?",
+      [
+        "It relates different positions within the same sequence to compute a representation of the sequence itself",
+        "It focuses on the external environment of the network",
+        "It ignores the sequence entirely",
+        "It is a measure of the network's attention to itself"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "11": [
+      "What are the primary limitations of transformers compared to convolutional neural networks (CNNs)?",
+      [
+        "Transformers lack some of the inductive biases inherent to CNNs",
+        "Transformers are better suited for image recognition",
+        "Transformers require less training data",
+        "Transformers have a lower computational complexity"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "12": [
+      "In the 'Transformer for Image Recognition' architecture, what are the 'queries' in the attention mechanism?",
+      [
+        "Sections or parts of the images",
+        "Weights assigned to different elements in the sequence",
+        "Sentence embeddings",
+        "Convolutional feature maps"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "13": [
+      "What is the primary goal of the attention mechanism in the 'Transformer for Image Recognition'?",
+      [
+        "To compute a linear combination over values to determine relevance",
+        "To eliminate the need for attention mechanisms",
+        "To increase the image resolution",
+        "To reduce the number of convolutional layers"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "14": [
+      "Why are sinusoid-wave-based positional encodings added to the input embeddings in the 'Transformer for Image Recognition'?",
+      [
+        "To preserve positional information in the image",
+        "To reduce the dimensionality of the data",
+        "To improve the image's resolution",
+        "To speed up the training process"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "15": [
+      "What are some of the advantages of using a 'multi-head self-attention mechanism' in transformers?",
+      [
+        "It allows attending to different representation subspaces at different positions",
+        "It reduces the computational complexity of the network",
+        "It increases the size of the input data",
+        "It eliminates the need for convolutional layers"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "16": [
+      "What is the purpose of 'BEAM search' in sequence generation using transformers?",
+      [
+        "To optimize two words at a time during sequence generation",
+        "To keep multiple alternatives for the first word",
+        "To eliminate the need for attention mechanisms",
+        "To reduce the number of model parameters"
+      ],
+      [
+        1
+      ],
+      null
+    ],
+    "17": [
+      "What is the primary advantage of the 'Transformer for Image Recognition' over traditional convolutional neural networks (CNNs) for image recognition tasks?",
+      [
+        "The attention mechanism allows long-range interactions and outperforms CNNs",
+        "The transformer architecture requires less training data",
+        "The transformer architecture is more computationally efficient",
+        "The transformer architecture is more suitable for low-resolution images"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "18": [
+      "How does the attention mechanism in the 'Transformer for Image Recognition' operate on image blocks?",
+      [
+        "By using queries to focus on different sections or blocks of the image",
+        "By performing convolutional operations on the entire image",
+        "By randomly selecting blocks for attention",
+        "By eliminating the need for image preprocessing"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "19": [
+      "What is the primary goal of the 'attention pooling' operation in transformers for image recognition?",
+      [
+        "To compute a linear combination over values to determine the importance of different image blocks",
+        "To downsample the image",
+        "To apply convolutional filters to the image",
+        "To remove irrelevant information from the image"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "20": [
+      "Why is it important for transformers to have a differentiable means of control over selecting elements from a set?",
+      [
+        "To enable learning and adaptability in the network",
+        "To reduce the computational complexity of the model",
+        "To improve the model's accuracy",
+        "To eliminate the need for attention mechanisms"
+      ],
+      [
+        0
+      ],
+      null
+    ]
+  },
+  "Image Segmentation": {
+    "1": [
+      "What are some advantages of using U-net for image segmentation?",
+      [
+        "Flexibility for various image masking tasks",
+        "High accuracy with proper training, dataset, and time",
+        "Absence of fully connected layers",
+        "Faster processing compared to sliding-window methods"
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      null
+    ],
+    "2": [
+      "What is a disadvantage of U-net when working with larger images?",
+      [
+        "It requires high GPU memory.",
+        "It has a slow training process due to many layers.",
+        "Pre-trained models are not widely available for specific tasks.",
+        "It struggles with semantic segmentation."
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "3": [
+      "Why is U-net considered effective for biomedical segmentation applications?",
+      [
+        "It succeeds in scenarios with limited data.",
+        "It relies on pre-trained models for superior performance.",
+        "It uses fully connected layers for segmentation.",
+        "It works well for semantic segmentation."
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "4": [
+      "What is Mask-RCNN known for in the field of computer vision?",
+      [
+        "It is the state-of-the-art method for instance segmentation.",
+        "It is widely used for object detection.",
+        "It is an alternative to U-net for biomedical segmentation.",
+        "It is a lightweight model for real-time applications."
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "5": [
+      "What is the primary goal of transfer learning in deep learning?",
+      [
+        "To recognize and apply knowledge and skills learned in previous tasks to new tasks.",
+        "To train models with a minimal amount of data.",
+        "To eliminate the need for labeled data.",
+        "To speed up the training process."
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "6": [
+      "What are some advantages of using artificial neural networks (ANN) mentioned in the content?",
+      [
+        "Self-learned high-level features representation",
+        "Modularity",
+        "Transfer Learning capabilities",
+        "High computational efficiency"
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      null
+    ],
+    "7": [
+      "How can convolutional neural networks (CNNs) be used for transfer learning?",
+      [
+        "By using pre-trained CNN models on tasks related to the new task.",
+        "By avoiding the use of CNNs in transfer learning.",
+        "By initializing CNNs with random weights for the new task.",
+        "By training CNNs from scratch for the new task."
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "8": [
+      "What is the primary idea behind fine-tuning in transfer learning?",
+      [
+        "To adapt knowledge acquired in one domain to a new domain by updating specific layers.",
+        "To start training from random weights for the new task.",
+        "To use entirely different network architectures for the new task.",
+        "To eliminate the need for pre-trained models."
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "9": [
+      "What is the main assumption of multitask learning in transfer learning?",
+      [
+        "Source and target domain data share some common features that can help classify tasks.",
+        "Source and target domain data are completely unrelated.",
+        "Multitask learning does not rely on shared features.",
+        "Multitask learning is not applicable in transfer learning."
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "10": [
+      "What is the main goal of multitask learning?",
+      [
+        "To train multiple tasks simultaneously and learn shared representations.",
+        "To perform tasks sequentially without sharing knowledge.",
+        "To create separate models for each task.",
+        "To use domain-specific features exclusively."
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "11": [
+      "What are some methods to define the importance of each task in multitask learning?",
+      [
+        "Weighted uniform losses, manually tuned losses, dynamic weights of the losses",
+        "Random weight assignments, equal importance to all tasks, fixed weights",
+        "Eliminating losses, prioritizing tasks by complexity, fixed weights",
+        "Using the same loss for all tasks, without any weight adjustments"
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "12": [
+      "What is the primary goal of domain adaptation in transfer learning?",
+      [
+        "To recognize and apply knowledge and skills learned in previous domains to the new domain.",
+        "To use the same dataset for training and testing.",
+        "To make source and target domains as different as possible.",
+        "To ignore the importance of marginal probability distributions."
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "13": [
+      "What is the primary focus of domain adaptation in the context of feature spaces?",
+      [
+        "Aligning feature spaces between source and target domains.",
+        "Making source and target domains as dissimilar as possible.",
+        "Ignoring the marginal probability distributions.",
+        "Creating unique feature spaces for each task."
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "14": [
+      "What is the main difference between domain adaptation and multitask learning?",
+      [
+        "Domain adaptation focuses on aligning feature spaces, while multitask learning trains multiple tasks simultaneously.",
+        "Domain adaptation and multitask learning are essentially the same.",
+        "Multitask learning works with unrelated source and target domains, while domain adaptation uses related domains.",
+        "Domain adaptation relies solely on labeled data, while multitask learning does not."
+      ],
+      [
+        0
+      ],
+      null
+    ],
+    "15": [
+      "In the context of image segmentation, what is the primary goal of semantic segmentation?",
+      [
+        "To assign a category to every pixel in the image.",
+        "To identify and segment specific important objects in an image.",
+        "To perform monocular depth estimation.",
+        "To detect instances of objects in the image."
+      ],
+      [
+        0
+      ],
+      null
+    ]
+  }
+}
