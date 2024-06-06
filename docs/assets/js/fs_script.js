@@ -46,7 +46,7 @@ function loadUserJson() {
 
 // Function to load questions from a JSON file (replace 'questions.json' with your file path)
 function loadQuestions() {
-    fetch("./CVQuestions.json")
+    fetch("./MASDQuestions.json")
         .then((response) => response.json())
         .then((data) => {
             questionsData = data;
